@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>brute force | VWAT</title>
+    <link rel="stylesheet" href="../../style/style.css">
+    <link rel="shortcut icon" href="../../img/favicon.ico" type="image/x-icon">
+    <script src="../../js/main.js"></script>
+</head>
+<body onload="animated()">
+    <header>
+        <a href="../../index.html"><img src="../../img/logo.png" alt="" class="logo"></a>
+        <div id="burguer-bt" class="container" onclick="burguer(this)">
+            <div class="bar1"></div>
+            <div class="bar2"></div>
+            <div class="bar3"></div>
+        </div>
+    </header>
+    <nav class="navbar">
+        <ul class="navbar-nav1">
+            <li class="navbar-item">
+                <a href="../../index.html" class="nav-link"><img src="../../img/home.png" alt="home"></a>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="../../tutoriais/"><img src="../../img/book.png" alt="tutors"></a>
+            </li>
+            <hr>
+        </ul>
+
+        <ul class="navbar-nav">
+            <li class="navbar-item">
+                <a class="nav-link" href="../xss/index.html">xss</a>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="../xss_refleted/index.html">xss refleted</a>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="../xss_stored/index.html">xss stored</a>
+            </li>
+            <li class="navbar-item">
+                <a id="link-activy" class="nav-link" href="#">brute force</a>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="../crsf/index.html">csrf</a>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="../lfi/index.html">lfi</a>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="../rfi/index.html">rfi</a>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="../sqli/index.html">sqli</a>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="../sqli_blind/index.html">sqli blind</a>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="../directory/">dictory traversal</a>
+            </li>
+            <li class="navbar-item">
+                <a class="nav-link" href="../ldap/">ldap</a>
+            </li>
+        </ul>
+
+        <ul class="navbar-nav2" style="bottom: 0;">
+            <li class="navbar-item"><a href="#">
+                <img class="nav-link" src="../../img/options.png" alt="">
+                </a></li>
+            <li class="navbar-item"><a href="#">
+                <img class="nav-link" src="../../img/exit.png" alt="">
+            </a></li>
+        </ul>
+    </nav>
+    <main id="principal">
+        <div class="conteudo">
+            <h2>brute force</h2>
+            <div class="div-vuln">
+                <h3>Faça Login</h3>
+                <form action="#" method="post">
+                    <label for="user">Username:</label>
+                    <input type="text" name="user" id="user">
+                    <label for="pass">Password:</label>
+                    <input type="password" name="pass" id="pass">
+                    <input type="submit" id="submit" value="submit">
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <h4>VWAT - (Vulnerable Web Application Testing)</h4>
+        <p>website criado com o intuito de ajudar pessoas na segurança da informação</p>
+        <p>website feito por <i><a target="_blank" href="https://github.com/Carlos-Silva344">Carlos Silva</a></i> e seu irmão <i><a target="_blank" href="https://github.com/N3utr0n-FHC">N3utr0n</a></i></p>
+    </footer>
+</body>
+</html>

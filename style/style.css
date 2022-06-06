@@ -1,0 +1,188 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    /*
+    --cor1: black;
+    --cor2: #292E32;
+    --cor3: #2D3940;
+    --cor4: #222940;
+    --cor5: #ABDD29;
+    */
+
+    --cor1: #22EE00;
+    --cor2: #8FF240;
+    --cor3: #AA88FF;
+    --cor4: #282A2D;
+    --cor5: #1B1D20;
+
+    font-size: 1.1em;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap');
+
+body {
+    background-color: var(--cor5);
+    color: whitesmoke;
+}
+
+h1 {
+    text-align: center;
+    padding: 20px 0;
+}
+
+.sorte {
+    font-family: 'Noto Sans JP', sans-serif;
+    writing-mode: vertical-rl;
+    -webkit-writing-mode: vertical-rl;
+    -ms-writing-mode: vertical-rl;
+    position: absolute;
+    left: 10px;
+    top: 6rem;
+}
+
+strong {
+    color: var(--cor2);
+    font-family: Hack;
+}
+
+strong.intrusao {
+    color: var(--cor3);
+}
+
+.navbar i {
+    color: #8FF240;
+}
+
+.navbar span {
+    color: var(--cor2);
+    font-family: Hack;
+}
+
+.navbar span:hover {
+    color: var(--cor2);
+}
+
+main .row .conteudo {
+    background-color: var(--cor4);
+    box-shadow: 0 4px 16px 4px rgba(0,0,0,0.3);
+    border-radius: 4px;
+    padding: 20px;
+    margin: 20px 10px;
+}
+
+main .row .conteudo h2 {
+    text-align: center;
+    padding-bottom: 20px;
+}
+
+main .row .conteudo #skull {
+    width: 30%;
+    border-radius: 4px;
+}
+
+main .row .card {
+    margin: 20px 10px;
+    box-shadow: 0 4px 16px 4px rgba(0,0,0,0.3);
+    background-color: var(--cor4);
+}
+
+main .row .card .btn {
+    background-image: linear-gradient(#9B30F9, #84e);
+    border: none;
+}
+
+main .player {
+    background-color: var(--cor5);
+    border-radius: 4px;
+}
+
+main .player .col {
+    padding: 0;
+}
+
+main .player .info {
+    text-align: center;
+}
+
+main .player img {
+    width: 100%;
+    height: 200px;
+}
+
+main .controls i {
+    color: var(--cor2);
+    font-size: 30px;
+    padding: 10px;
+}
+
+main .player h5 {
+    padding-top: 20px;
+}
+
+main ul {
+    list-style: none;
+}
+
+main ul a {
+    color: var(--cor3);
+    text-decoration: none;
+}
+
+main ul a:hover {
+    color: #745caf;
+}
+
+footer {
+    background-color: #282A2D;
+    min-height: 100vh;
+    height: auto;
+}
+
+footer .conteudo {
+    padding-top: 140px;
+}
+
+footer a {
+    text-decoration: none;
+    color: var(--cor3);
+}
+
+footer a:hover {
+    color: #745caf;
+}
+
+footer i {
+    color: var(--cor3);
+}
+
+@media (max-width: 720px) {
+    .sorte {
+        left: 0;
+    }
+
+    main .row .conteudo #skull {
+        width: 90%;
+        margin: auto;
+        display: block;
+    }
+
+    main .player {
+        display: block;
+    }
+
+    main .col-sm-2 .col .card {
+        margin: auto;
+        margin-bottom: 20px;
+    }
+
+    footer .conteudo {
+        padding-top: 20px;
+    }
+
+    footer .col-sm-3 {
+        padding-bottom: 20px;
+    }
+}

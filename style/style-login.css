@@ -23,7 +23,7 @@ body {
 
 main .conteudo {
     background-color: var(--cor5);
-    box-shadow: 0 4px 16px 4px rgba(255, 255, 255, 0.486);
+    box-shadow: 0 20px 16px 20px rgba(0, 0, 0, 0.719);
     padding: 20px;
     border-radius: 4px;
     margin: auto;

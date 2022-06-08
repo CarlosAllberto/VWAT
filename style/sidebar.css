@@ -1,0 +1,132 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+:root {
+    --cor1: #22EE00;
+    --cor2: #8FF240;
+    --cor3: #AA88FF;
+    --cor4: #282A2D;
+    --cor5: #1B1D20;
+
+    font-size: 1.1em;
+}
+
+#header {
+    margin-left: 13rem;
+}
+
+.sidebar {
+    width: 13rem;
+    background-color: var(--cor4);
+    position: absolute;
+    min-height: 100vh;
+    height: auto;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349);
+}
+
+.sidebar ul {
+    list-style: none;
+    padding: 0;
+
+    height: 85vh;
+    overflow:hidden; 
+    overflow-y:scroll;
+}
+
+.sidebar ul a {
+    text-decoration: none;
+}
+
+.sidebar ul li {
+    color: var(--cor3);
+    padding: 10px 0;
+    border-bottom: .5px solid var(--cor5);
+}
+
+.sidebar ul li.active {
+    background-color: var(--cor5);
+}
+
+.sidebar ul li p {
+    padding-left: 1rem;
+    margin: 0;
+}
+
+.sidebar ul li:hover {
+    background-color: var(--cor5);
+}
+
+main {
+    margin-left: 13rem;
+}
+
+#terminal {
+    display: none;
+    background-color: black;
+    width: 600px;
+    height: 450px;
+    position: absolute;
+    opacity: 90%;
+    border: 5px solid var(--cor4);
+    box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.438);
+    top: 6rem;
+    left: 20rem; 
+}
+
+#terminal.show {
+    display: block;
+}
+
+#terminal #controls p {
+    margin: 0;
+}
+
+#terminal #controls {
+    background-color: var(--cor4);
+    text-align: center;
+    padding: 5px 0;
+    display: flex;
+}
+
+#terminal #controls span {
+    width: 15px;
+    height: 15px;
+    display: block;
+    border-radius: 50%;
+    margin: 5px;
+    cursor: pointer;
+}
+
+#terminal #controls p {
+    text-align: center;
+    margin: auto;
+}
+
+#terminal #controls span.red {
+    background-color: rgb(255, 28, 28);
+}
+
+#terminal #controls span.orange {
+    background-color: rgb(255, 173, 21);
+}
+
+#terminal #controls span.blue {
+    background-color: rgb(86, 86, 255);
+}
+
+#terminal #result {
+    padding: 5px;
+    color: #8FF240;
+}
+
+#terminal #result span {
+    width: 2px;
+    height: 18px;
+    margin-left: 5px;
+    background-color: whitesmoke;
+    display: inline-flex;
+}

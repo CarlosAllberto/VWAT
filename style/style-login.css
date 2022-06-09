@@ -21,12 +21,16 @@ body {
     padding-top: 5rem;
 }
 
+main .col-sm-4 {
+    padding-bottom: 20px;
+}
+
 main .conteudo {
     background-color: var(--cor5);
     box-shadow: 0 20px 16px 20px rgba(0, 0, 0, 0.719);
     padding: 20px;
     border-radius: 4px;
-    margin: auto;
+    
 }
 
 main .conteudo h2 {
@@ -38,6 +42,12 @@ main .conteudo h2 {
 main .conteudo input {
     background-color: var(--cor4);
     border: none;
+    color: var(--cor2);
+}
+
+main .conteudo input:focus {
+    background-color: var(--cor4);
+    color: var(--cor2);
 }
 
 main img {

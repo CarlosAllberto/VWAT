@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="theme-color" content="#282A2D" />
+    <meta name="theme-color" content="darkgreen" />
     <title>VWAT - Vulners</title>
 
     <script src="../js/terminal.js"></script>
@@ -14,7 +14,7 @@
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/sidebar.css">
+    <link rel="stylesheet" href="../style/vulners.css">
 
     <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
     <script src="../js/main.js"></script>
@@ -30,34 +30,65 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="header">
         <div class="container container-fluid">
-            <a class="navbar-brand" href="#">
+            <button class="navbar-toggler" type="button" data-bs-toggle="open" data-bs-target="#sidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="sidebar()">
+                <i class="bi bi-bug"></i>
+            </button>
+            <a class="navbar-brand" href="../home.html">
                 <img src="../img/logo.png" alt="logo" width="30" height="30" class="d-inline-block align-text-top">
                 <span class="navbar-brand mb-0 h1">VWAT</span>              
             </a> 
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
-            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="#"><i class="bi bi-facebook"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#"><i class="bi bi-github"></i></a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#" onclick="terminal()"><i class="bi bi-lightbulb-fill"></i></a>
-                  </li>
-                </ul>
-            </div> 
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link" aria-current="page" href="../home.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link active" href="./index.html">Vulners</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Tutors</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                      Config
+                    </a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#">Action</a></li>
+                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><hr class="dropdown-divider"></li>
+                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <button class="btn btn-outline-success" type="submit">Search</button>
+            </form>
+            <ul class="d-flex navbar-nav">
+                <li class="nav-item">
+                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-facebook"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#"><i class="bi bi-github"></i></a>
+                </li>
+                <li class="nav-item" onclick="terminal()">
+                    <a class="nav-link" href="#"><i class="bi bi-lightbulb-fill"></i></a>
+                </li>
+            </ul>  
         </div>
     </nav>
-    <div class="sidebar">
+    <div class="sidebar" id="sidebar">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container container-fluid">
+                <button class="navbar-toggler" type="button" data-bs-toggle="open" data-bs-target="#sidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="sidebar()">
+                    <i class="bi bi-bug-fill"></i>
+                </button>
                 <a class="navbar-brand" href="#">
                     <span class="navbar-brand mb-0 h1">Vulners</span>              
                 </a>
@@ -66,7 +97,7 @@
         <ul>  
             <a href="./">
                 <li class="active">
-                    <p>Home</p>
+                    <p>Introdusão</p>
                 </li>
             </a>
             <a href="#">
@@ -147,11 +178,28 @@
         <div class="container-md">
             <h1>Bem vindo ao <strong>Game.</strong></h1>
             <div class="row">
-                <div class="conteudo">
-                    <img class="col-md-6 float-md-end mb-3 ms-md-3" src="../img/ethicalhacking.avif" alt="hacking" style="width: 400px;">
-                    <p>
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quaerat alias veritatis voluptates? Eum dolor distinctio nemo sint, magnam aperiam. Aliquam possimus officia totam pariatur alias consectetur distinctio quae vel.
-                    </p>
+                <div class="col">
+                    <div class="conteudo">
+                        <h2>Como funciona?</h2>
+                        <img class="col-md-6 float-md-end mb-3 ms-md-3" src="../img/ethicalhacking.avif" alt="hacking" style="width: 300px;">
+                        <p>
+                            Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quaerat alias veritatis voluptates? Eum dolor distinctio nemo sint, magnam aperiam. Aliquam possimus officia totam pariatur alias consectetur distinctio quae vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum ad maiores fuga voluptas voluptates cupiditate, consequuntur possimus ipsam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam fugit at dicta ad? Quod quisquam dolore ullam quibusdam ipsa vero blanditiis aliquam obcaecati? Aperiam nisi quas quasi, officia ad quia.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="conteudo">
+                        <h3>Dicas</h3>
+                        <p>Caso esteja com dificuldades você pode clicar no icone de lampada no cabeçalho para aparecer uma dica de exploração comforme mostrado a baixo.</p>
+                    </div>
+                </div>
+                <div class="col-md-5">
+                    <div class="conteudo">
+                        <h3>Musica</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat alias iste soluta quibusdam culpa, in corporis consequuntur, quas recusandae animi quaerat! Dignissimos dolores quo nulla nam ea fugit omnis tenetur.</p>
+                    </div>
                 </div>
             </div>
         </div>

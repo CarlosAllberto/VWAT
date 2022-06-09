@@ -57,12 +57,24 @@ strong.intrusao {
     color: var(--cor2);
 }
 
+.navbar input {
+    background-color: var(--cor4);
+    border: 1px solid var(--cor5);
+}
+
+.navbar input:focus {
+    background-color: var(--cor4);
+    border: none;
+    color: var(--cor2);
+}
+
 main .row .conteudo {
     background-color: var(--cor4);
     box-shadow: 0 4px 16px 4px rgba(0,0,0,0.3);
     border-radius: 4px;
     padding: 20px;
     margin: 20px 10px;
+    text-align: justify;
 }
 
 main .row .conteudo h2 {
@@ -95,13 +107,17 @@ main .player .col {
     padding: 0;
 }
 
+main .player .col-md-4 {
+    padding: 0;
+}
+
 main .player .info {
     text-align: center;
 }
 
 main .player img {
     width: 100%;
-    height: 200px;
+    height: auto;
 }
 
 main .controls i {
@@ -112,6 +128,14 @@ main .controls i {
 
 main .player h5 {
     padding-top: 20px;
+}
+
+main .carousel img {
+    width: 100px;
+}
+
+main .carousel img:hover {
+    filter: drop-shadow(1px 1px 4px whitesmoke);
 }
 
 main ul {

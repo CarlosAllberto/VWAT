@@ -28,3 +28,8 @@ burguer = (x) => {
         navbar.style.display = "block";
     }
 }
+
+sidebar = () => {
+    const sidebar = document.querySelector("div#sidebar");
+    sidebar.classList.toggle("open");
+}

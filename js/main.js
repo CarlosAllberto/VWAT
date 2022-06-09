@@ -33,3 +33,8 @@ sidebar = () => {
     const sidebar = document.querySelector("div#sidebar");
     sidebar.classList.toggle("open");
 }
+
+resultSearch = () => {
+    const result = document.querySelector("#result-search");
+    result.classList.toggle("open");
+}

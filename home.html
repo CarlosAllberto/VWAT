@@ -62,7 +62,7 @@
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onfocus="resultSearch()" onblur="resultSearch()">
                 <button class="btn btn-outline-success" type="submit">Search</button>
             </form>
             <ul class="d-flex navbar-nav">
@@ -75,6 +75,37 @@
                 <li class="nav-item">
                   <a class="nav-link" href="#"><i class="bi bi-github"></i></a>
                 </li>
+            </ul>
+        </div>
+        <div id="result-search">
+            <p>Results:</p>
+            <hr>
+            <ul>  
+                <a href="./">
+                    <li class="active">
+                        <p>Introdusão</p>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <p>XSS</p>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <p>XSS Refleted</p>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <p>XSS Stored</p>
+                    </li>
+                </a>
+                <a href="#">
+                    <li>
+                        <p>SQL Injection</p>
+                    </li>
+                </a>
             </ul>
         </div>
     </nav>

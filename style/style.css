@@ -68,6 +68,23 @@ strong.intrusao {
     color: var(--cor2);
 }
 
+#result-search {
+    width: 280px;
+    height: 400px;
+    top: 4rem;
+    border-radius: 4px;
+    right: 320px;
+    display: none;
+    position: absolute;
+    background-color: var(--cor4);
+    box-shadow: 0 4px 16px 4px rgba(0,0,0,0.3);
+    padding: 20px;
+}
+
+#result-search.open {
+    display: block;
+}
+
 main .row .conteudo {
     background-color: var(--cor4);
     box-shadow: 0 4px 16px 4px rgba(0,0,0,0.3);

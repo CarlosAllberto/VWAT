@@ -28,7 +28,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">		
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
 </head>
-<body>
+<body onload="TextWrite()">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark" style="z-index: 1;">
         <div class="container container-fluid">
             <a class="navbar-brand" href="./home.html">
@@ -112,7 +112,7 @@
     <main>
         <div class="container-md">
             <p class="sorte">すべてのハッカー、ハッキングの世界に頑張ってください</p>
-            <h1><strong>VWAT</strong> um Website para testes de <strong class="intrusao">Intrusão.</strong></h1>
+            <h1 class="textWrite">VWAT um Website para testes de Intrusão.</h1>
             <div class="row">
                 <div class="col-sm-8">
                     <div class="conteudo">
@@ -138,10 +138,16 @@
                                 <div class="info">
                                     <h5>LO-FI hacker 3hr</h5>
                                     <p>dj alok</p>
+                                    <div id="waveform"></div>
                                     <div class="controls">
-                                        <i class="bi bi-arrow-left-square"></i>
-                                        <i class="bi bi-pause-btn"></i>
-                                        <i class="bi bi-arrow-right-square"></i>
+                                        <div>
+                                            <i class="bi bi-skip-backward-fill"></i>
+                                            <i onclick="play()" class="bi bi-play-circle-fill"></i>
+                                            <i class="bi bi-skip-forward-fill"></i>
+                                        </div>
+                                        <div>
+                                            <i class="bi bi-download" style="padding-left: 270px;"></i>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -229,6 +235,16 @@
                                   <h5 class="card-title">Criptografias</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                                   <a href="#" class="btn btn-primary">Resolver Criptografias</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="card" style="width: 18rem;">
+                                <img src="./img/ctf.png" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                  <h5 class="card-title">CTF</h5>
+                                  <p class="card-text">Em breve em um futuro distante...</p>
+                                  <a href="#" class="btn btn-primary">Capturar Bandeiras</a>
                                 </div>
                             </div>
                         </div>
@@ -360,6 +376,26 @@
                 }
             ]
         });
+    </script>
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+
+    <script>
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: 'lightgray',
+            progressColor: 'purple',
+            height: 40,
+        });
+        wavesurfer.load('../music/metallica.mp3');
+        
+        const play = () => {
+            wavesurfer.play();
+        };
+
+        const pause = () => {
+            wavesurfer.pause();
+        };
     </script>
 </body>
 </html>

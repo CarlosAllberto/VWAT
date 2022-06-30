@@ -27,7 +27,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
 </head>
-<body>
+<body onload="TextWrite()">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="header">
         <div class="container container-fluid">
             <button class="navbar-toggler" type="button" data-bs-toggle="open" data-bs-target="#sidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="sidebar()">
@@ -176,7 +176,7 @@
             </div>
         </div>
         <div class="container-md">
-            <h1>Bem vindo ao <strong>Game.</strong></h1>
+            <h1 class="textWrite">Bem vindo ao Game.</h1>
             <div class="row">
                 <div class="col">
                     <div class="conteudo">
@@ -189,20 +189,44 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-md-6">
+                <div class="col-md-7">
                     <div class="conteudo">
                         <h3>Dicas</h3>
                         <p>Caso esteja com dificuldades você pode clicar no icone de lampada no cabeçalho para aparecer uma dica de exploração comforme mostrado a baixo.</p>
                     </div>
                 </div>
-                <div class="col-md-5">
+                <div class="col">
                     <div class="conteudo">
                         <h3>Musica</h3>
+                        <div id="waveform"></div>
                         <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Placeat alias iste soluta quibusdam culpa, in corporis consequuntur, quas recusandae animi quaerat! Dignissimos dolores quo nulla nam ea fugit omnis tenetur.</p>
                     </div>
                 </div>
             </div>
         </div>
     </main>
+
+
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+
+    <script>
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: 'violet',
+            progressColor: 'purple'
+        });
+        wavesurfer.load('../music/metallica.mp3');
+        //wavesurfer.on('ready', function () {
+        //    wavesurfer.play();
+        //});
+        const play = () => {
+            wavesurfer.play();
+        };
+
+        const pause = () => {
+            wavesurfer.pause();
+        };
+    </script>
+
 </body>
 </html>

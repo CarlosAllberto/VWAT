@@ -49,13 +49,13 @@ O projecto é todo feito em `( HTML/CSS/JS/Bootstrap/JQuery )` na parte do Front
 ### História:
 
 Tudo começou quando se aproximava a data de aniversário do ex Hacker ( Miraldino Paulo Dória ) de vulgo ( N3utr0n ), e como ele sabia que o seu melhor amigo ( Carlos Alberto da Silva ) é um grande desenvolvedor ( Web ), como presente de aniversário ele pediu para o amigo construir um ambiente em que ele poderia explorar vulnerabilidades web mais comuns, e ele falou que ajudaria na parte do desenvolvimento do ( Back-end ) usando ( PHP ), e no começo ele ajudou um pouco na parte do Back-End, mas ele viu que isso seria chato, pois dessa forma ele saberia onde as vulnerabilidades estariam, por conta disso ele deixou o amigo fazer todo projecto completo.
-E depois de alguns meses desenvolvendo, apresentamos a vocês o projecto ( VWAT ) - ( Vulnerable Web Application T... ), um ambiente vulnerabilidade para treinar suas habilidades em ( Segurança da Informação ) e em especial o ( Web Hacking ).
+E depois de alguns meses desenvolvendo, apresentamos a vocês o projecto ( VWAT ) - ( Vulnerable Web Application Testing ), um ambiente vulnerabilidade para treinar suas habilidades em ( Segurança da Informação ) e em especial o ( Web Hacking ).
 
 ### Autores:
 
-Versão 1.0 ( Carlos Alberto da Silva ) e ( N3utr0n )
-Versão 2.0 ( Carlos Aberto da Silva )
-... ( Carlos Alberto da Silva )
+	Versão 1.0 ( Carlos Alberto da Silva ) e ( N3utr0n )
+	Versão 2.0 ( Carlos Aberto da Silva )
+	... ( Carlos Alberto da Silva )
 
 ### Requisitos:
 

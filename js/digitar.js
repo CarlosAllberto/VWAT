@@ -5,7 +5,7 @@ const TextWrite = () => {
     textoArray.forEach((letra, i) => {
         setTimeout(() => {
             texto.innerHTML += letra;
-        }, 75 * i);
+        }, 110 * i);
     });
 
 }

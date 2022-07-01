@@ -1,6 +1,23 @@
 <?php
 session_start();
 include("connection.php");
+
+if(isset($_POST["username"]) || isset($_POST["password"])) {
+    $user = $_POST["username"];
+    $pass = $_POST["password"];
+    if(strlen($user) == 0) {
+        $msg_error = "Preencha o seu campo de Usuario";
+    } else if(strlen($pass) == 0) {
+        $msg_error = "Preencha o seu campo de Senha";
+    } else {
+        if($user == "shinigami" && $pass == "admin") {
+            header("Location: home.html");
+        } else {
+            $msg_error = "Usuario ou Senha Invalidos";
+        }
+    }
+}
+
 ?>
 
 <!DOCTYPE html>
@@ -28,17 +45,21 @@ include("connection.php");
                     <div class="conteudo">
                         <img src="./img/logo.png" alt="logo">
                         <h2>VWAT</h2>
-                        <div class="alert alert-danger">
-                            Email ou senha incorretos
-                        </div>
-                        <form action="#" method="post">
+                        <?php
+                            if($msg_error) {
+                                echo '<div class="alert alert-danger">',
+                                $msg_error,
+                                '</div>';
+                            }
+                        ?> 
+                        <form action="" method="post">
                             <div class="mb-3">
                                 <label for="Username">Username</label>
-                                <input type="text" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+                                <input type="text" id="username" name="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
                             </div>
                             <div class="mb-3">
                                 <label for="password">Password</label>
-                                <input type="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                                <input type="password" id="password" name="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
                             </div>
                             <div class="d-md-flex justify-content-md-end">
                                 <button class="btn btn-primary" type="submit">Submit</button>

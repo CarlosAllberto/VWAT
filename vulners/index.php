@@ -1,3 +1,12 @@
+<?php
+    if(!isset($_SESSION)) {
+        session_start();
+    }
+    if(!isset($_SESSION['id'])) {
+        header("Location: ../login.php");
+    }
+?>
+
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -33,7 +42,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="open" data-bs-target="#sidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="sidebar()">
                 <i class="bi bi-bug"></i>
             </button>
-            <a class="navbar-brand" href="../home.html">
+            <a class="navbar-brand" href="../index.php">
                 <img src="../img/logo.png" alt="logo" width="30" height="30" class="d-inline-block align-text-top">
                 <span class="navbar-brand mb-0 h1">VWAT</span>              
             </a> 
@@ -43,10 +52,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../home.html">Home</a>
+                    <a class="nav-link" aria-current="page" href="../index.php">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="./index.html">Vulners</a>
+                    <a class="nav-link active" href="./index.php">Vulners</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Tutors</a>
@@ -59,7 +68,7 @@
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><hr class="dropdown-divider"></li>
-                        <li><a class="dropdown-item" href="#">Something else here</a></li>
+                        <li><a class="dropdown-item" href="../config/logout.php">Logout</a></li>
                     </ul>
                 </li>
             </ul>
@@ -76,9 +85,6 @@
                 </li>
                 <li class="nav-item">
                   <a class="nav-link" href="#"><i class="bi bi-github"></i></a>
-                </li>
-                <li class="nav-item" onclick="terminal()">
-                    <a class="nav-link" href="#"><i class="bi bi-lightbulb-fill"></i></a>
                 </li>
             </ul>  
         </div>

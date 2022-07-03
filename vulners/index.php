@@ -6,12 +6,6 @@
     if(!isset($_SESSION['id'])) {
         header("Location: ../login.php");
     }
-
-    if(!isset($_GET["id"])) {
-        $id = $_GET["id"];
-    } else {
-        $id = "introdusao";
-    }
 ?>
 
 <!DOCTYPE html>
@@ -49,7 +43,7 @@
             <button class="navbar-toggler" type="button" data-bs-toggle="open" data-bs-target="#sidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="sidebar()">
                 <i class="bi bi-bug"></i>
             </button>
-            <a class="navbar-brand" href="../index.php">
+            <a class="navbar-brand" href="../">
                 <img src="../img/logo.png" alt="logo" width="30" height="30" class="d-inline-block align-text-top">
                 <span class="navbar-brand mb-0 h1">VWAT</span>              
             </a> 
@@ -59,10 +53,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link" aria-current="page" href="../index.php">Home</a>
+                    <a class="nav-link" aria-current="page" href="../">Home</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link active" href="./index.php">Vulners</a>
+                    <a class="nav-link active" href="./?page=introducao">Vulners</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Tutors</a>
@@ -71,7 +65,7 @@
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
                       Config
                     </a>
-                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">Action</a></li>
                         <li><a class="dropdown-item" href="#">Another action</a></li>
                         <li><hr class="dropdown-divider"></li>
@@ -113,57 +107,57 @@
                     <p>Introdusão</p>
                 </li>
             </a>
-            <a href="./xss_refleted/">
+            <a href="./?page=xss_refleted">
                 <li>
                     <p>XSS Refleted</p>
                 </li>
             </a>
-            <a href="#">
+            <a href="./?page=xss_stored">
                 <li>
                     <p>XSS Stored</p>
                 </li>
             </a>
-            <a href="#">
+            <a href="./?page=xss_dom">
                 <li>
                     <p>XSS DOM</p>
                 </li>
             </a>
-            <a href="#">
+            <a href="./?page=sqli">
                 <li>
                     <p>SQL Injection</p>
                 </li>
             </a>
-            <a href="#">
+            <a href="./?page=sqli_blind">
                 <li>
                     <p>SQL Injection Blind</p>
                 </li>
             </a>
-            <a href="#">
+            <a href="./?page=brute">
                 <li>
                     <p>Brute Force</p>
                 </li>
             </a>
-            <a href="#">
+            <a href="./?page=csrf">
                 <li>
                     <p>CSRF</p>
                 </li>
             </a>
-            <a href="#">
+            <a href="./?page=lfi">
                 <li>
                     <p>LFI</p>
                 </li>
             </a>
-            <a href="#">
+            <a href="./?page=rfi">
                 <li>
                     <p>RFI</p>
                 </li>
             </a>
-            <a href="#">
+            <a href="./?page=ldap">
                 <li>
                     <p>LDAP</p>
                 </li>
             </a>
-            <a href="#">
+            <a href="./?page=traversal">
                 <li>
                     <p>Directory Traversal</p>
                 </li>
@@ -193,7 +187,7 @@
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
         </div>
         <div class="container-md">
-            <?php load() ?>
+            <?php require load();?>
         </div>
     </main>
 

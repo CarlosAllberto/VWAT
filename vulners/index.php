@@ -59,7 +59,7 @@
                     <a class="nav-link active" href="./?page=introducao">Vulners</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tutors</a>
+                    <a class="nav-link" href="../tutoriais/">Tutors</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -67,7 +67,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="../config">Configurações</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="../config/logout.php">Logout</a></li>
                     </ul>
@@ -96,7 +96,7 @@
                 <button class="navbar-toggler" type="button" data-bs-toggle="open" data-bs-target="#sidebar" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation" onclick="sidebar()">
                     <i class="bi bi-bug-fill"></i>
                 </button>
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="./">
                     <span class="navbar-brand mb-0 h1">Vulners</span>              
                 </a>
             </div>
@@ -163,6 +163,7 @@
                 </li>
             </a>
         </ul>
+        <i class="bi bi-chevron-compact-down" style="text-align: center; margin: auto; display: block;"></i>
     </div>
     <main>
         <div id="terminal" class="hide">
@@ -182,7 +183,7 @@
                 <p>[vwat@vwat-pc ~]$ curl http://127.0.0.1:5500/brute-force<span></span></p>
             </div>
         </div>
-        <div class="alert alert-primary alert-dismissible fade show">
+        <div class="alert alert-primary alert-dismissible fade show" style="z-index: -1;">
             <i class="bi bi-info-circle"></i> Continuo melhorando essa página, Adoraria ouvir seus comentários <a href="#">aqui</a>.
             <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
         </div>

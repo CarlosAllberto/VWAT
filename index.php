@@ -40,7 +40,7 @@
 <body onload="TextWrite()">
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark" style="z-index: 1;">
         <div class="container container-fluid">
-            <a class="navbar-brand" href="./home.html">
+            <a class="navbar-brand" href="./">
                 <img src="./img/logo.png" alt="logo" width="30" height="30" class="d-inline-block align-text-top">
                 <span class="navbar-brand mb-0 h1">VWAT</span>              
             </a> 
@@ -50,13 +50,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="./home.php">Home</a>
+                    <a class="nav-link active" aria-current="page" href="./">Home</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="./vulners/">Vulners</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Tutors</a>
+                    <a class="nav-link" href="./tutoriais/">Tutors</a>
                 </li>
                 <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -64,7 +64,7 @@
                     </a>
                     <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown">
                         <li><a class="dropdown-item" href="#">Action</a></li>
-                        <li><a class="dropdown-item" href="#">Another action</a></li>
+                        <li><a class="dropdown-item" href="./config">Configurações</a></li>
                         <li><hr class="dropdown-divider"></li>
                         <li><a class="dropdown-item" href="./config/logout.php">Logout</a></li>
                     </ul>
@@ -155,7 +155,7 @@
                                     <div class="controls">
                                         <div>
                                             <i class="bi bi-skip-backward-fill"></i>
-                                            <i onclick="play()" class="bi bi-play-circle-fill"></i>
+                                            <i onclick="play(this)" class="bi bi-play-circle-fill"></i>
                                             <i class="bi bi-skip-forward-fill"></i>
                                         </div>
                                         <div>
@@ -237,7 +237,7 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Procurar Falhas</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="./vulners/index.html" class="btn btn-primary">Pagina de Bugs</a>
+                                  <a href="./vulners/" class="btn btn-primary">Pagina de Bugs</a>
                                 </div>
                             </div>
                         </div>
@@ -267,7 +267,7 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Tutoriais</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Pagina de Tutoriais</a>
+                                  <a href="./tutoriais/" class="btn btn-primary">Pagina de Tutoriais</a>
                                 </div>
                             </div>
                         </div>
@@ -277,7 +277,7 @@
                                 <div class="card-body">
                                   <h5 class="card-title">Configurações</h5>
                                   <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Configurações</a>
+                                  <a href="./config" class="btn btn-primary">Configurações</a>
                                 </div>
                             </div>
                         </div>
@@ -321,16 +321,16 @@
                 <div class="col-sm-3">
                     <h5>USEFUL LINKS</h5>
                     <p>
-                        <a href="#">Home</a>
+                        <a href="./">Home</a>
                     </p>
                     <p>
-                        <a href="#">Procurar Bugs</a>
+                        <a href="./vulners/">Procurar Bugs</a>
                     </p>
                     <p>
-                        <a href="#">Settings</a>
+                        <a href="./config/">Settings</a>
                     </p>
                     <p>
-                        <a href="#">Tutorials</a>
+                        <a href="./config/">Tutorials</a>
                     </p>
                 </div>
                 <div class="col-sm-3">
@@ -402,11 +402,11 @@
         });
         wavesurfer.load('../music/metallica.mp3');
         
-        const play = () => {
+        const play = (e) => {
             wavesurfer.play();
         };
 
-        const pause = () => {
+        const pause = (e) => {
             wavesurfer.pause();
         };
     </script>

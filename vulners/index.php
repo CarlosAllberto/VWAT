@@ -166,21 +166,26 @@
         <i class="bi bi-chevron-compact-down" style="text-align: center; margin: auto; display: block;"></i>
     </div>
     <main>
-        <div id="terminal" class="hide">
+        <div id="terminal" class="hide small">
             <div id="controls">
                 <span class="red" onclick="terminal()">
                     <i></i>
                 </span>
-                <span class="orange">
+                <span class="orange" onclick="terminal()">
                     <i></i>
                 </span>
-                <span class="blue">
+                <span class="blue" onclick="terminalFull()">
                     <i></i>
                 </span>
                 <p>Terminal - vwat@vwat-pc:~</p>
             </div>
+            <div id="links">
+                <a href="#">Terminal</a>
+                <a href="#">Tutoriais</a>
+                <a href="#">Info</a>
+            </div>
             <div id="result">
-                <p>[vwat@vwat-pc ~]$ curl http://127.0.0.1:5500/brute-force<span></span></p>
+                <p>[vwat@vwat-pc ~]$ curl http://127.0.0.1:5500/brute-force</p>
             </div>
         </div>
         <div class="alert alert-primary alert-dismissible fade show" style="z-index: -1;">

@@ -17,6 +17,9 @@ if(isset($_POST["username"]) || isset($_POST["password"])) {
                 session_start();
             }
             $_SESSION["id"] = "keydeteste123";
+            if (!isset($_COOKIE)) {
+                setcookie("level", "low");
+            }
             header("Location: index.php");
         } else {
             $msg_error = "Usuario ou Senha Invalidos";

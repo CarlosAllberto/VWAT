@@ -67,17 +67,36 @@ main {
     margin-left: 13rem;
 }
 
-#terminal {
+main .conteudo input {
+    background-color: var(--cor5);
+    border: none;
+    color: var(--cor2);
+}
+
+main .conteudo input:focus {
+    background-color: var(--cor5);
+    color: var(--cor2);
+}
+
+#terminal.small {
     display: none;
     background-color: black;
-    width: 600px;
-    height: 450px;
+    width: 700px;
+    height: 520px;
     position: absolute;
-    opacity: 90%;
-    border: 5px solid var(--cor4);
+    opacity: 98%;
+    border: .5px solid var(--cor4);
     box-shadow: 0 2px 2px 3px rgba(0, 0, 0, 0.438);
-    top: 6rem;
+    top: 3rem;
     left: 20rem; 
+    z-index: 1;
+}
+
+#terminal.full {
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
 }
 
 #terminal.show {
@@ -88,10 +107,17 @@ main {
     margin: 0;
 }
 
+#terminal a {
+    color: white;
+    margin: 0 5px;
+    font-size: 15px;
+    text-decoration: none;
+}
+
 #terminal #controls {
-    background-color: var(--cor4);
+    background-color: black;
     text-align: center;
-    padding: 5px 0;
+    padding: 2px 0 5px 0;
     display: flex;
 }
 
@@ -126,12 +152,22 @@ main {
     color: #8FF240;
 }
 
-#terminal #result span {
-    width: 2px;
+#terminal #result p::after {
+    content: "|"; 
     height: 18px;
-    margin-left: 5px;
-    background-color: whitesmoke;
-    display: inline-flex;
+    margin-left: 2px;
+    opacity: 1;
+    animation: blind .7s infinite;
+}
+
+@keyframes blind {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
+    }
 }
 
 @media (max-width: 720px) {

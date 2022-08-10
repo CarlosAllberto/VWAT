@@ -19,25 +19,35 @@
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="style/style.css">
-
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
-    <script src="./js/main.js"></script>
-
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
-
-    <script src="./js/digitar.js"></script>
-
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
-
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">		
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
 </head>
 <body onload="TextWrite()">
+    <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content bg-dark">
+                <div class="modal-header">
+                    <form class="w-100">
+                        <div>
+                            <input class="form-control me-2 bg-dark text-light" type="search" placeholder="Search" aria-label="Search" onfocus="resultSearch()" onblur="resultSearch()">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center">Nenhuma pesquisa recente.</p>
+                </div>
+                <div class="modal-footer">
+                </div>
+            </div>
+        </div>
+    </div>
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark" style="z-index: 1;">
         <div class="container container-fluid">
             <a class="navbar-brand" href="./">
@@ -71,8 +81,7 @@
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search" onfocus="resultSearch()" onblur="resultSearch()">
-                <button class="btn btn-outline-success" type="submit">Search</button>
+                <input class="form-control me-2" type="search" placeholder="Search" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Search">
             </form>
             <ul class="d-flex navbar-nav">
                 <li class="nav-item">
@@ -86,40 +95,9 @@
                 </li>
             </ul>
         </div>
-        <div id="result-search">
-            <p>Results:</p>
-            <hr>
-            <ul>  
-                <a href="./">
-                    <li class="active">
-                        <p>Introdusão</p>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <p>XSS</p>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <p>XSS Refleted</p>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <p>XSS Stored</p>
-                    </li>
-                </a>
-                <a href="#">
-                    <li>
-                        <p>SQL Injection</p>
-                    </li>
-                </a>
-            </ul>
-        </div>
     </nav>
     <main>
-        <div class="container-md">
+        <div class="container">
             <p class="sorte">すべてのハッカー、ハッキングの世界に頑張ってください</p>
             <h1 class="textWrite">VWAT um Website para testes de Intrusão.</h1>
             <div class="row">
@@ -354,7 +332,9 @@
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
-
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/digitar.js"></script>
     <script>
         $('.carousel').slick({
             autoplay: true,

@@ -17,21 +17,21 @@
     <meta name="theme-color" content="darkgreen" />
     <title>VWAT - Vulners</title>
 
-    <script src="../js/terminal.js"></script>
+    <script src="../assets/js/terminal.js"></script>
 
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <!-- JavaScript Bundle with Popper -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
-    <link rel="stylesheet" href="../style/style.css">
-    <link rel="stylesheet" href="../style/vulners.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/vulners.css">
 
-    <link rel="shortcut icon" href="../img/favicon.ico" type="image/x-icon">
-    <script src="../js/main.js"></script>
+    <link rel="shortcut icon" href="../assets/img/favicon.ico" type="image/x-icon">
+    <script src="../assets/js/main.js"></script>
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
 
-    <script src="../js/digitar.js"></script>
+    <script src="../assets/js/digitar.js"></script>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -44,7 +44,7 @@
                 <i class="bi bi-bug"></i>
             </button>
             <a class="navbar-brand" href="../">
-                <img src="../img/logo.png" alt="logo" width="30" height="30" class="d-inline-block align-text-top">
+                <img src="../assets/img/logo.png" alt="logo" width="30" height="30" class="d-inline-block align-text-top">
                 <span class="navbar-brand mb-0 h1">VWAT</span>              
             </a> 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -206,7 +206,7 @@
             waveColor: 'violet',
             progressColor: 'purple'
         });
-        wavesurfer.load('../music/metallica.mp3');
+        wavesurfer.load('../assets/music/metallica.mp3');
         //wavesurfer.on(\'ready\', function () {
         //    wavesurfer.play();
         //});

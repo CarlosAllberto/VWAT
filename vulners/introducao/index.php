@@ -3,7 +3,7 @@
     <div class="col">
         <div class="conteudo">
             <h2>Como funciona?</h2>
-            <img class="col-md-6 float-md-end mb-3 ms-md-3" src="../img/ethicalhacking.avif" alt="hacking" style="width: 300px;">
+            <img class="col-md-6 float-md-end mb-3 ms-md-3" src="../assets/img/ethicalhacking.avif" alt="hacking" style="width: 300px;">
             <p>
                 Lorem ipsum dolor sit amet consectetur adipisicing elit. Labore quaerat alias veritatis voluptates? Eum dolor distinctio nemo sint, magnam aperiam. Aliquam possimus officia totam pariatur alias consectetur distinctio quae vel. Lorem ipsum dolor sit amet consectetur adipisicing elit. Nam earum ad maiores fuga voluptas voluptates cupiditate, consequuntur possimus ipsam Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laboriosam fugit at dicta ad? Quod quisquam dolore ullam quibusdam ipsa vero blanditiis aliquam obcaecati? Aperiam nisi quas quasi, officia ad quia.
             </p>

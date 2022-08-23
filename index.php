@@ -18,18 +18,25 @@
 
     <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
+<<<<<<< HEAD
     <!-- JavaScript Bundle with Popper -->
 
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
+=======
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./assets/img/favicon.ico" type="image/x-icon">
+>>>>>>> 3e36f31 (redesign)
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP&display=swap" rel="stylesheet"> 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.css">		
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick-theme.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 <body onload="TextWrite()">
+<<<<<<< HEAD
     <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content bg-dark">
@@ -48,10 +55,30 @@
             </div>
         </div>
     </div>
+=======
+    <!-- Modal -->
+    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+            <div class="modal-header">
+                <input class="form-control me-2" placeholder="Search" aria-label="Search">
+            </div>
+            <div class="modal-body">
+                not results search
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+            </div>
+        </div>
+    </div>
+
+>>>>>>> 3e36f31 (redesign)
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark" style="z-index: 1;">
         <div class="container container-fluid">
             <a class="navbar-brand" href="./">
-                <img src="./img/logo.png" alt="logo" width="30" height="30" class="d-inline-block align-text-top">
+                <img src="./assets/img/logo.png" alt="logo" width="30" height="30" class="d-inline-block align-text-top">
                 <span class="navbar-brand mb-0 h1">VWAT</span>              
             </a> 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -80,9 +107,15 @@
                     </ul>
                 </li>
             </ul>
+<<<<<<< HEAD
             <form class="d-flex" role="search">
                 <input class="form-control me-2" type="search" placeholder="Search" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Search">
             </form>
+=======
+            <div class="m-auto" >
+                <input data-toggle="modal" data-target="exampleModal" class="form-control me-2" placeholder="Search" aria-label="Search">
+            </div>
+>>>>>>> 3e36f31 (redesign)
             <ul class="d-flex navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="#"><i class="bi bi-facebook"></i></a>
@@ -96,6 +129,7 @@
             </ul>
         </div>
     </nav>
+<<<<<<< HEAD
     <main>
         <div class="container">
             <p class="sorte">すべてのハッカー、ハッキングの世界に頑張ってください</p>
@@ -110,17 +144,104 @@
                         </p>
                         <p>
                             Esse site foi feito com o intuito de ajudar iniciantes de Pentest ou até mesmo profissionais na àrea a fazer testes de intrusão com diferentes niveis sendo eles facil medio e dificil caso você esteja com difuldades em algum desafio você pode consultar a nossa pagina de tutoriais
+=======
+>>>>>>> 3e36f31 (redesign)
 
-                            Obs: esse site é extremamente vulneravel e qualquer script kid pode invadir ele, por isso recomendamos que que você rode ele em alguma VM e escolha uma senha forte para que nenhuma pessoa mal itenciona te hackeie e te der problemas. 
+    <div class="alert alert-primary alert-dismissible fade show" style="margin: 0 10px;">
+        <i class="bi bi-info-circle"></i> Continuo melhorando essa página, Adoraria ouvir seus comentários <a href="#">aqui</a>.
+        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+    </div>
+
+    <section id="apresentacao" class="apresentacao my-5">
+        <div class="container">
+            <div class="row">
+                <p class="sorte">すべてのハッカー、ハッキングの世界に頑張ってください</p>
+                <h1 class="textWrite">VWAT um Website para testes de Intrusão.</h1>
+                <div class="col-lg-4">
+                    <div class="apresentacao__content">
+                        <img class="col-md-12 float-md-start mb-2 me-md-3" id="skull" src="./assets/img/a94757118997165.60943557b01f2.gif" alt="skull">
+                        <p>
+                            Obrigado por usar a nossa plataforma. <!--Elimine todas suas distrações, coloque uma musica tematica hacker de fundo e divirta-se hackeando a nossa querida plataforma que ainda é um bebê.-->
                         </p>
                     </div>
-                    <div class="alert alert-primary alert-dismissible fade show" style="margin: 0 10px;">
-                        <i class="bi bi-info-circle"></i> Continuo melhorando essa página, Adoraria ouvir seus comentários <a href="#">aqui</a>.
-                        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+                </div>
+                <div class="col-lg">
+                    <div class="apresentacao__content">
+                        <div class="row">
+                            <div class="col-3">
+                                <img class="rounded-circle" width="120" height="120" src="./assets/img/ethicalhacking.avif" alt="">
+                            </div>
+                            <div class="col">
+                                <!--<canvas id="myChart" width="400" height="400"></canvas>-->
+                            </div>
+                        </div>
                     </div>
-                    <div class="conteudo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="paginas" class="paginas my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="card bg-dark">
+                        <img src="./assets/img/ethicalhacking.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Procurar Falhas</h5>
+                            <p class="card-text">Some quick example text</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark">
+                        <img src="./assets/img/criptografia.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Criptografias</h5>
+                            <p class="card-text">Some quick example text to build</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark">
+                        <img src="./assets/img/learning.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Tutoriais</h5>
+                            <p class="card-text">Some quick example text to build on the card</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col">
+                    <div class="card bg-dark">
+                        <img src="./assets/img/engrenagem.jpg" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">Config</h5>
+                            <p class="card-text">Some quick example text</p>
+                        </div>
+                    </div>
+                </div>
+                <!--
+                <div class="col">
+                    <div class="card bg-dark">
+                        <img src="./assets/img/ethicalhacking.avif" class="card-img-top" alt="...">
+                        <div class="card-body">
+                            <h5 class="card-title">CTF</h5>
+                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
+                        </div>
+                    </div>
+                </div>
+                -->
+            </div>
+        </div>
+    </section>
+
+    <section id="musica" class="musica my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="musica__content">
                         <h3>Musica</h3>
-                        <p>A gente não estava brincando, você deveria colocar uma musica para escultar.</p>
+                        <p>Não estava brincando, você deveria colocar uma musica para escultar.</p>
                         <div class="row player">
                             <div class="col-md-4">
                                 <img src="https://i.ytimg.com/vi/yaQjWqxY8tw/hqdefault.jpg" alt="">
@@ -144,7 +265,16 @@
                             </div>
                         </div>
                     </div>
-                    <div class="conteudo">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="ferramentas" class="ferramentas my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="ferramentas__content">
                         <h3>Ferramentas recomendadas</h3>
                         <div class="carousel">
                             <div><a href="https://www.kali.org/tools/metasploit-framework/" target="_blank">
@@ -175,26 +305,38 @@
                                 <img src="https://www.kali.org/tools/hashcat/images/hashcat-logo.svg" alt="hashcat">
                             </a></div>
                         </div>
-                        <p>Não recomendamos ficar dependendo de Ferramentas mas recomendamos usar para facilitar sua vida.</p>
+                        <p>Ferramentas não são feitas para você depender delas, são para ajudar sua vida.</p>
                     </div>
-                    <div class="conteudo">
-                        <div class="row">
-                            <div class="col">
-                                <div>
-                                    <h4>Nossa comunidade</h4>
-                                    <p>junte-se a nossa comunidade do discord</p>
-                                    <p>juntos aprendemos mais e sem contar tambem que é mais divertido.</p>
-                                    <a href="#" class="btn btn-primary">Fazer parte</a>
-                                </div>
-                            </div>
-                            <div class="col-md-7">
-                                <div class="discord">
-                                    <img src="https://thebughunter.io/wp-content/uploads/2021/12/passo-4.png" alt="discord">
-                                </div>
-                            </div>
-                        </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="comunidade" class="comunidade my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="comunidade__content">
+                        <h4>Nossa comunidade</h4>
+                        <p>junte-se a nossa comunidade do discord</p>
+                        <p>juntos aprendemos mais e sem contar tambem que é mais divertido.</p>
+                        <a href="#" class="btn btn-primary">Fazer parte</a>
                     </div>
-                    <div class="conteudo">
+                </div>
+                <div class="col">
+                    <div class="comunidade__content">
+                        <img src="https://thebughunter.io/wp-content/uploads/2021/12/passo-4.png" alt="discord">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="relate" class="relate my-5">
+        <div class="container">
+            <div class="row">
+                <div class="col">
+                    <div class="relate__content">
                         <h3>Achou algum Bug?</h3>
                         <p>Caso tenha encontrado alugm Bug no site ficaremos muito felizes se você relatar ou entrar em contato.
                             você tambem pode dar dicas de como melhorar a plataforma.
@@ -208,66 +350,15 @@
                         </ul>
                     </div>
                 </div>
-                <div class="col-sm-2">
-                        <div class="col">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img/ethicalhacking.avif" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Procurar Falhas</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="./vulners/" class="btn btn-primary">Pagina de Falhas</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img/criptografia.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Criptografias</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="#" class="btn btn-primary">Resolver Criptografias</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img/ctf.png" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">CTF</h5>
-                                  <p class="card-text">Em breve em um futuro distante...</p>
-                                  <a href="#" class="btn btn-primary">Capturar Bandeiras</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img/learning.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Tutoriais</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="./tutoriais/" class="btn btn-primary">Pagina de Tutoriais</a>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="col">
-                            <div class="card" style="width: 18rem;">
-                                <img src="./img/Engrenagem.jpg" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                  <h5 class="card-title">Configurações</h5>
-                                  <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                                  <a href="./config" class="btn btn-primary">Configurações</a>
-                                </div>
-                            </div>
-                        </div>
-                </div>
             </div>
         </div>
-    </main>
+    </section>
+
     <footer>
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid container">
                 <a class="navbar-brand" href="#">
-                    <img src="./img/logo.png" alt="logo" width="40" height="40" class="d-inline-block align-text-top">
+                    <img src="./assets/img/logo.png" alt="logo" width="40" height="40" class="d-inline-block align-text-top">
                     <span class="navbar-brand mb-0 h1">VWAT</span>              
                 </a> 
 
@@ -329,12 +420,76 @@
         </div>
     </footer>
 
+
     <script src="https://code.jquery.com/jquery-1.11.0.min.js"></script>
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
+<<<<<<< HEAD
     <script src="./js/main.js"></script>
     <script src="./js/digitar.js"></script>
+=======
+    <script src="./assets/js/main.js"></script>
+    <script src="./assets/js/digitar.js"></script>
+    <script src="https://unpkg.com/wavesurfer.js"></script>
+    <script src="https://www.jsdelivr.com/package/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script>
+        var wavesurfer = WaveSurfer.create({
+            container: '#waveform',
+            waveColor: 'lightgray',
+            progressColor: 'purple',
+            height: 40,
+        });
+        wavesurfer.load('../music/metallica.mp3');
+        
+        const play = (e) => {
+            wavesurfer.play();
+        };
+
+        const pause = (e) => {
+            wavesurfer.pause();
+        };
+    </script>
+
+    <script>
+        const ctx = document.getElementById('myChart');
+        const myChart = new Chart(ctx, {
+            type: 'bar',
+            data: {
+                labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
+                datasets: [{
+                    label: '# of Votes',
+                    data: [12, 19, 3, 5, 2, 3],
+                    backgroundColor: [
+                        'rgba(255, 99, 132, 0.2)',
+                        'rgba(54, 162, 235, 0.2)',
+                        'rgba(255, 206, 86, 0.2)',
+                        'rgba(75, 192, 192, 0.2)',
+                        'rgba(153, 102, 255, 0.2)',
+                        'rgba(255, 159, 64, 0.2)'
+                    ],
+                    borderColor: [
+                        'rgba(255, 99, 132, 1)',
+                        'rgba(54, 162, 235, 1)',
+                        'rgba(255, 206, 86, 1)',
+                        'rgba(75, 192, 192, 1)',
+                        'rgba(153, 102, 255, 1)',
+                        'rgba(255, 159, 64, 1)'
+                    ],
+                    borderWidth: 1
+                }]
+            },
+            options: {
+                scales: {
+                    y: {
+                        beginAtZero: true
+                    }
+                }
+            }
+        });
+    </script>
+>>>>>>> 3e36f31 (redesign)
     <script>
         $('.carousel').slick({
             autoplay: true,
@@ -369,26 +524,6 @@
                 }
             ]
         });
-    </script>
-
-    <script src="https://unpkg.com/wavesurfer.js"></script>
-
-    <script>
-        var wavesurfer = WaveSurfer.create({
-            container: '#waveform',
-            waveColor: 'lightgray',
-            progressColor: 'purple',
-            height: 40,
-        });
-        wavesurfer.load('../music/metallica.mp3');
-        
-        const play = (e) => {
-            wavesurfer.play();
-        };
-
-        const pause = (e) => {
-            wavesurfer.pause();
-        };
     </script>
 </body>
 </html>

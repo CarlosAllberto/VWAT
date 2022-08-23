@@ -181,11 +181,12 @@ main .player h5 {
     padding-top: 20px;
 }
 
-main .carousel img {
-    width: 70px;
+.carousel img {
+    width: 100px;
+    margin: auto;
 }
 
-main .carousel img:hover {
+.carousel img:hover {
     filter: drop-shadow(1px 1px 4px whitesmoke);
 }
 
@@ -256,4 +257,15 @@ footer i {
     footer .col-sm-3 {
         padding-bottom: 20px;
     }
+}
+
+#paginas .card {
+    height: 280px;
+    cursor: pointer;
+    text-align: center;
+}
+
+#paginas .card:hover {
+    transition: .5s;
+    transform: translate3d(0, -15px, 0);
 }

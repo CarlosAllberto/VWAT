@@ -59,6 +59,7 @@ body {
 
 .paginas {
     &__card {
+        color: whitesmoke;
         height: 250px;
         cursor: pointer;
         background: $cor4;
@@ -111,6 +112,19 @@ body {
     }
 }
 
-footer {
+.footer {
     height: 100vh;
+    &__list {
+        list-style: none;
+        a {
+            color: $cor3;
+            text-decoration: none;
+            &:hover {
+                text-decoration: underline;
+            }
+        }
+    }
+    &__copyright {
+        background: $cor4;
+    }
 }

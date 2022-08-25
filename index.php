@@ -86,17 +86,17 @@
                 </li>
             </ul>
             <div class="d-flex m-auto" role="search">
-                <input class="form-control me-2 bg-dark" type="search" placeholder="Search" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Search">
+                <input class="form-control me-2 bg-dark" type="search" placeholder="Search" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Search" readonly>
             </div>
             <ul class="d-flex navbar-nav">
                 <li class="nav-item">
-                  <a class="nav-link" aria-current="page" href="#"><i class="bi bi-facebook"></i></a>
+                  <a class="nav-link" aria-current="page" href="#" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-twitter"></i></a>
+                  <a class="nav-link" href="#"><i class="bi bi-twitter" rel="noopener noreferrer"></i></a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" href="#"><i class="bi bi-github"></i></a>
+                  <a class="nav-link" href="#"><i class="bi bi-github" rel="noopener noreferrer"></i></a>
                 </li>
             </ul>
         </div>
@@ -126,9 +126,7 @@
                             <div class="col-3">
                                 <div id="curve_chart" style="width: 500px; height: 100%"></div>
                             </div>
-                            <div class="col">
-
-                            </div>
+                            <div class="col"></div>
                         </div>
                     </div>
                 </div>
@@ -140,40 +138,48 @@
         <div class="container">
             <div class="row">
                 <div class="col">
-                    <div class="paginas__card card text-center shadow">
-                        <img src="./assets/img/ethicalhacking.avif" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title mb-4">Procurar Falhas</h5>
-                            <p class="card-text">Some quick example text</p>
+                    <a href="#" class="text-decoration-none">
+                        <div class="paginas__card card text-center shadow">
+                            <img src="./assets/img/ethicalhacking.avif" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Procurar Falhas</h5>
+                                <p class="card-text">Some quick example text</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col">
-                    <div class="paginas__card card text-center shadow">
-                        <img src="./assets/img/criptografia.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title mb-4">Criptografias</h5>
-                            <p class="card-text">Some quick example text to build</p>
+                    <a href="#" class="text-decoration-none">
+                        <div class="paginas__card card text-center shadow">
+                            <img src="./assets/img/criptografia.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Criptografias</h5>
+                                <p class="card-text">Some quick example text to build</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col">
-                    <div class="paginas__card card text-center shadow">
-                        <img src="./assets/img/learning.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title mb-4">Tutoriais</h5>
-                            <p class="card-text">Some quick example text to build on the card</p>
+                    <a href="#" class="text-decoration-none">
+                        <div class="paginas__card card text-center shadow">
+                            <img src="./assets/img/learning.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Tutoriais</h5>
+                                <p class="card-text">Some quick example text to build on the card</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <div class="col">
-                    <div class="paginas__card card text-center shadow">
-                        <img src="./assets/img/engrenagem.jpg" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title mb-4">Config</h5>
-                            <p class="card-text">Some quick example text</p>
+                    <a href="#" class="text-decoration-none">
+                        <div class="paginas__card card text-center shadow">
+                            <img src="./assets/img/engrenagem.jpg" class="card-img-top" alt="...">
+                            <div class="card-body">
+                                <h5 class="card-title mb-4">Config</h5>
+                                <p class="card-text">Some quick example text</p>
+                            </div>
                         </div>
-                    </div>
+                    </a>
                 </div>
                 <!--
                 <div class="col">
@@ -239,31 +245,31 @@
                         <h3 class="ferramentas__title text-center">Ferramentas recomendadas</h3>
                         <p class="text-center">Ferramentas não são feitas para você depender delas, são para ajudar sua vida...</p>
                         <div class="carousel">
-                            <div><a href="https://www.kali.org/tools/metasploit-framework/" target="_blank">
+                            <div><a href="https://www.kali.org/tools/metasploit-framework/" rel="noopener noreferrer" target="_blank">
                                 <img src="https://www.kali.org/tools/metasploit-framework/images/metasploit-framework-logo.svg" alt="metasploit">
                             </a></div>
-                            <div><a href="https://www.kali.org/tools/burpsuite/" target="_blank">
+                            <div><a href="https://www.kali.org/tools/burpsuite/" rel="noopener noreferrer" target="_blank">
                                 <img src="https://www.kali.org/tools/burpsuite/images/burpsuite-logo.svg" alt="burp">
                             </a></div>
-                            <div><a href="https://www.kali.org/tools/zaproxy/" target="_blank">
+                            <div><a href="https://www.kali.org/tools/zaproxy/" rel="noopener noreferrer" target="_blank">
                                 <img src="https://www.kali.org/tools/zaproxy/images/zaproxy-logo.svg" alt="zap">
                             </a></div>
-                            <div><a href="https://www.kali.org/tools/nmap/" target="_blank">
+                            <div><a href="https://www.kali.org/tools/nmap/" rel="noopener noreferrer" target="_blank">
                                 <img src="https://www.kali.org/tools/nmap/images/nmap-logo.svg" alt="nmap">
                             </a></div>
-                            <div><a href="https://www.kali.org/tools/sqlmap/" target="_blank">
+                            <div><a href="https://www.kali.org/tools/sqlmap/" rel="noopener noreferrer" target="_blank">
                                 <img src="https://www.kali.org/tools/sqlmap/images/sqlmap-logo.svg" alt="sqlmap">
                             </a></div>
-                            <div><a href="https://www.kali.org/tools/commix/" target="_blank">
+                            <div><a href="https://www.kali.org/tools/commix/" rel="noopener noreferrer" target="_blank">
                                 <img src="https://www.kali.org/tools/commix/images/commix-logo.svg" alt="commix">
                             </a></div>
-                            <div><a href="https://www.kali.org/tools/nikto/" target="_blank">
+                            <div><a href="https://www.kali.org/tools/nikto/" rel="noopener noreferrer" target="_blank">
                                 <img src="https://www.kali.org/tools/nikto/images/nikto-logo.svg" alt="nikto">
                             </a></div>
-                            <div><a href="https://www.kali.org/tools/hydra/" target="_blank">
+                            <div><a href="https://www.kali.org/tools/hydra/" rel="noopener noreferrer" target="_blank">
                                 <img src="https://www.kali.org/tools/hydra/images/hydra-logo.svg" alt="hdra">
                             </a></div>
-                            <div><a href="https://www.kali.org/tools/hashcat/" target="_blank">
+                            <div><a href="https://www.kali.org/tools/hashcat/" rel="noopener noreferrer" target="_blank">
                                 <img src="https://www.kali.org/tools/hashcat/images/hashcat-logo.svg" alt="hashcat">
                             </a></div>
                         </div>
@@ -307,7 +313,7 @@
                 </div>
                 <div class="col">
                     <div class="relate__content">
-                        <ul class="relate__list">
+                        <ul class="relate__list px-0">
                             <li class="py-2">
                                 <i class="bi bi-github"></i> <a href="https://github.com/CarlosAllberto/VWAT/issues" target="_blank">CarlosAllberto/VWAT/issues</a>
                             </li>
@@ -327,7 +333,7 @@
         </div>
     </section>
 
-    <footer>
+    <footer class="footer" id="footer">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid container">
                 <a class="navbar-brand" href="#">
@@ -350,55 +356,55 @@
                 </div> 
             </div>
         </nav>
-        <div class="container conteudo">
-            <div class="row">
-                <div class="col-sm-3">
-                    <h5 class="text-center">VWAT</h5>
+        <div class="container">
+            <div class="row" style="height: 80vh;">
+                <div class="col-sm-3 m-auto">
+                    <h5 class="text-center mb-3">VWAT</h5>
                     <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus perspiciatis nihil beatae iste, voluptates qui sunt nobis expedita, sed laborum eos nostrum ipsa optio dolores dolorem suscipit tenetur labore mollitia.</p>
                 </div>
-                <div class="col-sm-3">
-                    <h5 class="text-center">PRODUCTS</h5>
+                <div class="col-sm-3 m-auto">
+                    <h5 class="text-center mb-3"">PRODUCTS</h5>
                     <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus perspiciatis nihil beatae iste, voluptates qui sunt nobis expedita, sed laborum eos nostrum ipsa optio dolores dolorem suscipit tenetur labore mollitia.</p>
                 </div>
-                <div class="col-sm-3">
-                    <h5 class="text-center">USEFUL LINKS</h5>
-                    <ul class="text-center">
-                        <li>
+                <div class="col-sm-3 m-auto">
+                    <h5 class="text-center mb-3"">USEFUL LINKS</h5>
+                    <ul class="text-center footer__list px-0">
+                        <li class="py-2">
                             <a href="./">Home</a>
                         </li>
-                        <li>
+                        <li class="py-2">
                             <a href="./vulners/">Procurar Falhas</a>
                         </li>
-                        <li>
+                        <li class="py-2">
                             <a href="./config/">Settings</a>
                         </li>
-                        <li>
+                        <li class="py-2">
                             <a href="#">Tutoriais</a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-3">
-                    <h5 class="text-center">CONTACT</h5>
-                    <ul class="text-center">
-                        <li>
+                <div class="col-sm-3 m-auto">
+                    <h5 class="text-center mb-3"">CONTACT</h5>
+                    <ul class="text-center footer__list px-0">
+                        <li class="py-2">
                             <a href="./">Home</a>
                         </li>
-                        <li>
+                        <li class="py-2">
                             <a href="./vulners/">Procurar Falhas</a>
                         </li>
-                        <li>
+                        <li class="py-2">
                             <a href="./config/">Settings</a>
                         </li>
-                        <li>
+                        <li class="py-2">
                             <a href="#">Tutoriais</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
-        <div class="text-center p-4">
+        <div class="footer__copyright text-center p-4">
             © 2022 Copyright:
-            <a class="text-reset fw-bold" href="https://vwat.com/">VWAT.com.br</a>
+            <a class="text-reset fw-bold text-decoration-none" href="https://vwat.com/">VWAT.com.br</a>
         </div>
     </footer>
 
@@ -436,7 +442,7 @@
         ]);
 
         var options = {
-          title: 'CarlosAllberto',
+          title: 'Statics',
           colors: ["blue", "purple"],
           backgroundColor: {
             'fill': 'transparent',

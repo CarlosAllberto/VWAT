@@ -43,6 +43,7 @@ body {
 }
 
 .paginas__card {
+  color: whitesmoke;
   height: 250px;
   cursor: pointer;
   background: #282A2D;
@@ -88,6 +89,19 @@ body {
   text-decoration: underline;
 }
 
-footer {
+.footer {
   height: 100vh;
+}
+.footer__list {
+  list-style: none;
+}
+.footer__list a {
+  color: #AA88FF;
+  text-decoration: none;
+}
+.footer__list a:hover {
+  text-decoration: underline;
+}
+.footer__copyright {
+  background: #282A2D;
 }/*# sourceMappingURL=style.css.map */

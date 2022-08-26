@@ -24,7 +24,7 @@ body {
     color: whitesmoke;
 }
 
-.header {
+.header, .footer {
     &__logo {
         span {
             color: $cor2;
@@ -41,9 +41,24 @@ body {
             }
         }
     }
+    &__redes {
+        i {
+            font-size: 1.5rem;
+            color: $cor2;
+            &:hover {
+                color: $cor1;
+            }
+        }
+    }
 }
 
 .apresentacao {
+    &__title::after {
+        content: "|";
+        margin-left: 5px;
+        opacity: 1;
+        animation: blind .7s infinite;
+    }
     &__sorte {
         //font-family: 'Noto Sans JP', sans-serif;
         writing-mode: vertical-rl;
@@ -75,13 +90,13 @@ body {
         background: black;
     }
     &__art {
-       max-width: 300px; 
-    }
+        min-width: 300px;
+     }
     i {
         font-size: 1.5rem;
         cursor: pointer;
     }
-    i.bi-play-circle {
+    i#musicPlay {
         font-size: 3rem;
     }
 }
@@ -126,5 +141,15 @@ body {
     }
     &__copyright {
         background: $cor4;
+    }
+}
+
+@keyframes blind {
+    0%, 100% {
+        opacity: 1;
+    }
+
+    50% {
+        opacity: 0;
     }
 }

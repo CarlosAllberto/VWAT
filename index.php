@@ -55,8 +55,8 @@
 
     <nav class="header navbar navbar-expand-lg bg-dark navbar-dark" style="z-index: 1;">
         <div class="container container-fluid">
-            <a class="navbar-brand header__logo " href="./">
-                <img src="./assets/img/logo.png" alt="logo" width="30" height="30" class="d-inline-block align-text-top">
+            <a class="navbar-brand header__logo d-flex" href="./">
+                <img src="./assets/img/logo.png" alt="logo" width="40" height="40" class="d-inline-block align-text-top">
                 <span class="navbar-brand mb-0 h1">VWAT</span>              
             </a> 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -88,7 +88,7 @@
             <div class="d-flex m-auto" role="search">
                 <input class="form-control me-2 bg-dark" type="search" placeholder="Search" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Search" readonly>
             </div>
-            <ul class="d-flex navbar-nav">
+            <ul class="header__redes d-flex navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="#" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
                 </li>
@@ -111,20 +111,19 @@
         <div class="container">
             <div class="row">
                 <p class="apresentacao__sorte">すべてのハッカー、ハッキングの世界に頑張ってください</p>
-                <h1 class="apresentacao__title text-center textWrite">VWAT um Website para testes de Intrusão.</h1>
-                <div class="col-lg-4">
-                    <div class="apresentacao__content p-4 shadow rounded">
-                        <img class="col-md-12 float-md-start mb-2 me-md-3" id="skull" src="./assets/img/a94757118997165.60943557b01f2.gif" alt="skull">
-                        <p>
-                            Obrigado por usar a nossa plataforma. <!--Elimine todas suas distrações, coloque uma musica tematica hacker de fundo e divirta-se hackeando a nossa querida plataforma que ainda é um bebê.-->
-                        </p>
+                <h1 class="apresentacao__title text-center textWriter">VWAT um Website para testes de Intrusão.</h1>
+                <p class="text-center">Obrigado por usar a nossa plataforma</p>
+                <div class="col-md-4 mt-3">
+                    <div class="apresentacao__content shadow rounded">
+                        <img class="w-100" id="skull" src="./assets/img/a94757118997165.60943557b01f2.gif" alt="skull">
+                        <!--class="col-md-12 float-md-start mb-2 me-md-3"-->
                     </div>
                 </div>
-                <div class="col-lg">
+                <div class="col-md mt-3">
                     <div class="apresentacao__content p-4 shadow rounded">
                         <div class="row">
                             <div class="col-3">
-                                <div id="curve_chart" style="width: 500px; height: 100%"></div>
+                                <div id="curve_chart" style="width: calc(100vh - 10rem); height: 100%"></div>
                             </div>
                             <div class="col"></div>
                         </div>
@@ -137,8 +136,8 @@
     <section id="paginas" class="paginas my-5">
         <div class="container">
             <div class="row">
-                <div class="col">
-                    <a href="#" class="text-decoration-none">
+                <div class="col-lg">
+                    <a href="./vulners/" class="text-decoration-none">
                         <div class="paginas__card card text-center shadow">
                             <img src="./assets/img/ethicalhacking.avif" class="card-img-top" alt="...">
                             <div class="card-body">
@@ -148,7 +147,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col-lg">
                     <a href="#" class="text-decoration-none">
                         <div class="paginas__card card text-center shadow">
                             <img src="./assets/img/criptografia.jpg" class="card-img-top" alt="...">
@@ -159,7 +158,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col-lg">
                     <a href="#" class="text-decoration-none">
                         <div class="paginas__card card text-center shadow">
                             <img src="./assets/img/learning.jpg" class="card-img-top" alt="...">
@@ -170,7 +169,7 @@
                         </div>
                     </a>
                 </div>
-                <div class="col">
+                <div class="col-lg">
                     <a href="#" class="text-decoration-none">
                         <div class="paginas__card card text-center shadow">
                             <img src="./assets/img/engrenagem.jpg" class="card-img-top" alt="...">
@@ -204,16 +203,16 @@
                     <p class="text-center">Não estava brincando, você deveria colocar uma musica para escultar.</p>
                     <div class="musica__content">
                         <div class="row player">
-                            <div class="col-lg-3">
-                                <img class="musica__art" src="https://i.ytimg.com/vi/yaQjWqxY8tw/hqdefault.jpg" alt="">
+                            <div class="col-md-3">
+                                <img class="musica__art w-100" src="https://akamai.sscdn.co/uploadfile/letras/albuns/d/8/8/0/11693.jpg" alt="">
                             </div>
-                            <div class="col">
+                            <div class="col-md">
                                 <div class="info p-4">
                                     <div class="d-flex justify-content-between">
-                                        <h4 class="musica__nome">LO-FI hacker 3hr</h4>
+                                        <h4 class="musica__nome">Metallica the unforgiven 2</h4>
                                         <i class="bi bi-heart"></i>
                                     </div>
-                                    <p class="musica__autor">dj alok</p>
+                                    <p class="musica__autor">metallica</p>
                                     <div id="waveform"></div>
                                     <div class="musica__controls d-flex justify-content-between">
                                         <div>
@@ -221,7 +220,7 @@
                                         </div>
                                         <div>
                                             <i class="bi bi-skip-backward-fill"></i>
-                                            <i class="bi bi-play-circle px-4"></i>
+                                            <i id="musicPlay" class="bi bi-play-circle px-4"></i>
                                             <i class="bi bi-skip-forward-fill"></i>
                                         </div>
                                         <div>
@@ -282,7 +281,7 @@
     <section id="comunidade" class="comunidade my-5">
         <div class="container">
             <div class="row">
-                <div class="col my-auto">
+                <div class="col-md my-auto">
                     <div class="comunidade__content">
                         <h4>Nossa comunidade</h4>
                         <p>junte-se a nossa comunidade no Discord para batermos um papo sobre hacking e programação</p>
@@ -290,9 +289,9 @@
                         <a href="#" class="btn buttonPurple">Faça parte</a>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-md">
                     <div class="comunidade__content">
-                        <img src="https://thebughunter.io/wp-content/uploads/2021/12/passo-4.png" alt="discord">
+                        <img class="w-100" src="https://thebughunter.io/wp-content/uploads/2021/12/passo-4.png" alt="discord">
                     </div>
                 </div>
             </div>
@@ -302,16 +301,16 @@
     <section id="relate" class="relate my-5">
         <div class="container">
             <div class="row">
-                <div class="col">
+                <div class="col-lg">
                     <div class="relate__content">
                         <h3>Achou algum Bug?</h3>
                         <p>Caso tenha encontrado alugm Bug no site ficaremos muito felizes se você relatar ou entrar em contato.
                             você tambem pode dar dicas de como melhorar a plataforma.
                         </p>
-                        <p>Você pode relatar em algum desses endereços ao lado.</p>
+                        <p>Você pode relatar em algum desses endereços.</p>
                     </div>
                 </div>
-                <div class="col">
+                <div class="col-lg">
                     <div class="relate__content">
                         <ul class="relate__list px-0">
                             <li class="py-2">
@@ -336,13 +335,13 @@
     <footer class="footer" id="footer">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <div class="container-fluid container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand footer__logo d-flex" href="#">
                     <img src="./assets/img/logo.png" alt="logo" width="40" height="40" class="d-inline-block align-text-top">
                     <span class="navbar-brand mb-0 h1">VWAT</span>              
                 </a> 
 
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
-                    <ul class="navbar-nav">
+                    <ul class="footer__redes navbar-nav">
                       <li class="nav-item">
                         <a class="nav-link" aria-current="page" href="#"><i class="bi bi-facebook"></i></a>
                       </li>
@@ -358,15 +357,15 @@
         </nav>
         <div class="container">
             <div class="row" style="height: 80vh;">
-                <div class="col-sm-3 m-auto">
+                <div class="col-lg-3 m-auto">
                     <h5 class="text-center mb-3">VWAT</h5>
                     <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus perspiciatis nihil beatae iste, voluptates qui sunt nobis expedita, sed laborum eos nostrum ipsa optio dolores dolorem suscipit tenetur labore mollitia.</p>
                 </div>
-                <div class="col-sm-3 m-auto">
+                <div class="col-lg-3 m-auto">
                     <h5 class="text-center mb-3"">PRODUCTS</h5>
                     <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus perspiciatis nihil beatae iste, voluptates qui sunt nobis expedita, sed laborum eos nostrum ipsa optio dolores dolorem suscipit tenetur labore mollitia.</p>
                 </div>
-                <div class="col-sm-3 m-auto">
+                <div class="col-lg-3 m-auto">
                     <h5 class="text-center mb-3"">USEFUL LINKS</h5>
                     <ul class="text-center footer__list px-0">
                         <li class="py-2">
@@ -383,7 +382,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="col-sm-3 m-auto">
+                <div class="col-lg-3 m-auto">
                     <h5 class="text-center mb-3"">CONTACT</h5>
                     <ul class="text-center footer__list px-0">
                         <li class="py-2">
@@ -413,13 +412,12 @@
     <script src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.7.1/slick.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/digitar.js"></script>
-    <script src="./assets/js/main.js"></script>
-    <script src="./assets/js/digitar.js"></script>
+    <script type="text/javascript" src="./assets/js/main.js"></script>
+    <script type="text/javascript" src="./assets/js/digitar.js"></script>
     <script src="https://unpkg.com/wavesurfer.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js"></script>
+
     <script type="text/javascript">
       google.charts.load('current', {'packages':['corechart']});
       google.charts.setOnLoadCallback(drawChart);
@@ -466,15 +464,21 @@
             height: 40,
         });
         wavesurfer.load('../assets/music/metallica.mp3');
-        
-        const play = (e) => {
-            wavesurfer.play();
-        };
-
-        const pause = (e) => {
-            wavesurfer.pause();
-        };
+        var play = document.querySelector("#musicPlay");
+        play.addEventListener("click", () => {
+            let classe = play.classList.toString();
+            if (classe.indexOf("bi-play-circle") != -1) {
+                wavesurfer.play();
+                play.classList.remove("bi-play-circle");
+                play.classList.add("bi-pause-circle");
+            } else {
+                wavesurfer.pause();
+                play.classList.remove("bi-pause-circle");
+                play.classList.add("bi-play-circle");
+            }
+        });
     </script>
+
     <script>
         $('.carousel').slick({
             autoplay: true,

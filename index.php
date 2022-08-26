@@ -210,7 +210,7 @@
                                 <div class="info p-4">
                                     <div class="d-flex justify-content-between">
                                         <h4 class="musica__nome">Metallica the unforgiven 2</h4>
-                                        <i class="bi bi-heart"></i>
+                                        <i id="musicLike" class="bi bi-heart"></i>
                                     </div>
                                     <p class="musica__autor">metallica</p>
                                     <div id="waveform"></div>
@@ -467,7 +467,7 @@
         var play = document.querySelector("#musicPlay");
         play.addEventListener("click", () => {
             let classe = play.classList.toString();
-            if (classe.indexOf("bi-play-circle") != -1) {
+            if (classe.indexOf("bi-play-circle") !== -1) {
                 wavesurfer.play();
                 play.classList.remove("bi-play-circle");
                 play.classList.add("bi-pause-circle");
@@ -477,6 +477,17 @@
                 play.classList.add("bi-play-circle");
             }
         });
+        var like = document.querySelector("#musicLike");
+        like.addEventListener("click", () => {
+            let classe = like.classList.toString();
+            if (classe.indexOf("bi-heart-fill") !== -1) {
+                like.classList.remove("bi-heart-fill");
+                like.classList.add("bi-heart");
+            } else {
+                like.classList.remove("bi-heart");
+                like.classList.add("bi-heart-fill");
+            }
+        })
     </script>
 
     <script>

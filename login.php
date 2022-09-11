@@ -1,6 +1,6 @@
 <?php
 session_start();
-include("./config/connection.php");
+include "./config/connection.php";
 
 if(isset($_POST["username"]) || isset($_POST["password"])) {
     $user = $_POST["username"];
@@ -12,7 +12,7 @@ if(isset($_POST["username"]) || isset($_POST["password"])) {
     } else if(strlen($user) > 20 || strlen($pass) > 20) {
         $msg_error = "Limite de caracteres: 20";
     } else {
-        if($user == "shinigami" && $pass == "admin") {
+        if($user == "admin" && $pass == "fgov") {
             if (!isset($_SESSION)) {
                 session_start();
             }

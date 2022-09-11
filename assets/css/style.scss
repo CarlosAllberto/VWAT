@@ -1,8 +1,3 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
 $cor1: #22EE00;
 $cor2: #8FF240;
 $cor3: #AA88FF;
@@ -18,12 +13,10 @@ $cor5: #1B1D20;
         color: #9B30F9;
     }
 }
-
 body {
     background: $cor5;
     color: whitesmoke;
 }
-
 .header, .footer {
     &__logo {
         span {
@@ -51,7 +44,9 @@ body {
         }
     }
 }
-
+main {
+    margin-left: 13rem;
+}
 .apresentacao {
     &__title::after {
         content: "|";
@@ -71,7 +66,6 @@ body {
         background: $cor4;
     }
 }
-
 .paginas {
     &__card {
         color: whitesmoke;
@@ -84,7 +78,6 @@ body {
         }
     }
 }
-
 .musica {
     &__content {
         background: black;
@@ -100,7 +93,6 @@ body {
         font-size: 3rem;
     }
 }
-
 .ferramentas {
     img {
         width: 100px;
@@ -110,7 +102,6 @@ body {
         }
     }
 }
-
 .relate {
     &__list {
         list-style: none;
@@ -126,9 +117,61 @@ body {
         }
     }
 }
-
+.sidebar {
+    width: 13rem;
+    background: $cor4;
+    position: fixed;
+    min-height: 150vh;
+    height: auto;
+    top: 0;
+    left: 0;
+    box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349);
+    a {
+        color: white;
+        text-decoration: none;
+        &:hover {
+            background-color: $cor5;
+        }
+        &.active {
+            background: $cor5;
+            .sidebar__icon {
+                color: $cor2;
+            }
+        }
+    }
+    ul {
+        list-style: none;
+        overflow-y:scroll;
+        height: 525px;
+        padding: 0;
+    }
+    ul li {
+        color: $cor3;
+        padding: 10px 0;
+        border-bottom: .5px solid $cor5;
+        padding-left: 1rem;
+        &:hover {
+            background: $cor5;
+        }
+    }
+    ul a {
+        text-decoration: none;
+    }
+    &__icon {
+        width: 3rem;
+        height: 3rem;
+        text-align: center;
+        i {
+            font-size: 1.5rem;
+        }
+    }
+    &__container {
+        padding: 0 5px;
+    }
+}
 .footer {
     height: 100vh;
+    margin-left: 13rem;
     &__list {
         list-style: none;
         a {
@@ -143,7 +186,6 @@ body {
         background: $cor4;
     }
 }
-
 @keyframes blind {
     0%, 100% {
         opacity: 1;
@@ -151,5 +193,28 @@ body {
 
     50% {
         opacity: 0;
+    }
+}
+@media (max-width: 720px) {
+    .sidebar {
+        width: 3rem;
+        &__adress {
+            display: none;
+        }
+        &__arrow {
+            display: none;
+        }
+    }
+    .vulnersHome {
+        margin-left: 3rem;
+    }
+    .footer {
+        margin-left: 3rem;
+    }
+    .header {
+        margin-left: 0;
+        &__title {
+            display: none;
+        }
     }
 }

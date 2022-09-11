@@ -1,7 +1,7 @@
-<h1 class="textWrite">Bem vindo(a) ao Game.</h1>
 <div class="row">
     <div class="col">
-        <div class="conteudo">
+        <div>
+            <h1 class="textWrite">Bem vindo(a) ao Game.</h1>
             <h2>Como funciona?</h2>
             <img class="col-md-6 float-md-end mb-3 ms-md-3" src="../assets/img/ethicalhacking.avif" alt="hacking" style="width: 300px;">
             <p>
@@ -10,6 +10,7 @@
         </div>
     </div>
 </div>
+
 <div class="row">
     <div class="col-md-7">
         <div class="conteudo">

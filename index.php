@@ -1,4 +1,5 @@
 <?php
+    include "./assets/php/sidebar.php";
     if(!isset($_SESSION)) {
         session_start();
     }
@@ -33,7 +34,6 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
 </head>
 <body>
-
     <div class="modal" id="exampleModal" tabindex="-1" role="dialog">
         <div class="modal-dialog" role="document">
             <div class="modal-content bg-dark">
@@ -54,7 +54,7 @@
     </div>
 
     <nav class="header navbar navbar-expand-lg bg-dark navbar-dark" style="z-index: 1;">
-        <div class="container container-fluid">
+        <div class="container-fluid">
             <a class="navbar-brand header__logo d-flex" href="./">
                 <img src="./assets/img/logo.png" alt="logo" width="40" height="40" class="d-inline-block align-text-top">
                 <span class="navbar-brand mb-0 h1">VWAT</span>              
@@ -85,9 +85,11 @@
                     </ul>
                 </li>
             </ul>
+            <!--
             <div class="d-flex m-auto" role="search">
                 <input class="form-control me-2 bg-dark" type="search" placeholder="Search" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Search" readonly>
             </div>
+            -->
             <ul class="header__redes d-flex navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="#" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
@@ -102,129 +104,133 @@
         </div>
     </nav>
 
-    <div class="alert alert-info alert-dismissible fade show" style="margin: 0 10px;">
-        <i class="bi bi-info-circle"></i> Continuo melhorando essa página, Adoraria ouvir seus comentários <a href="#">aqui</a>.
-        <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
-    </div>
+    <?php sidebarFunc();?>
 
-    <section id="apresentacao" class="apresentacao my-5">
-        <div class="container">
-            <div class="row">
-                <p class="apresentacao__sorte">すべてのハッカー、ハッキングの世界に頑張ってください</p>
-                <h1 class="apresentacao__title text-center textWriter">VWAT um Website para testes de Intrusão.</h1>
-                <p class="text-center">Obrigado por usar a nossa plataforma</p>
-                <div class="col-md-4 mt-3">
-                    <div class="apresentacao__content shadow rounded">
-                        <img class="w-100" id="skull" src="./assets/img/a94757118997165.60943557b01f2.gif" alt="skull">
-                        <!--class="col-md-12 float-md-start mb-2 me-md-3"-->
+    <main>
+        <div class="alert alert-info alert-dismissible fade show">
+            <i class="bi bi-info-circle"></i> Continuo melhorando essa página, Adoraria ouvir seus comentários <a href="#">aqui</a>.
+            <button type="button" class="btn-close" data-bs-dismiss="alert" aria-label="close"></button>
+        </div>
+
+        <section id="apresentacao" class="apresentacao my-5">
+            <div class="container">
+                <div class="row">
+                    <p class="apresentacao__sorte">すべてのハッカー、ハッキングの世界に頑張ってください</p>
+                    <h1 class="apresentacao__title text-center textWriter">VWAT um Website para testes de Intrusão.</h1>
+                    <p class="text-center">Obrigado por usar a nossa plataforma</p>
+                    <div class="col-md-4 mt-3">
+                        <div class="apresentacao__content shadow rounded">
+                            <img class="w-100" id="skull" src="./assets/img/a94757118997165.60943557b01f2.gif" alt="skull">
+                            <!--class="col-md-12 float-md-start mb-2 me-md-3"-->
+                        </div>
                     </div>
-                </div>
-                <div class="col-md mt-3">
-                    <div class="apresentacao__content p-4 shadow rounded">
-                        <div class="row">
-                            <div class="col-3">
-                                <div id="curve_chart" style="width: calc(100vh - 10rem); height: 100%"></div>
+                    <div class="col-md mt-3">
+                        <div class="apresentacao__content p-4 shadow rounded">
+                            <div class="row">
+                                <div class="col-3">
+                                    <div id="curve_chart" style="width: calc(100vh - 10rem); height: 100%"></div>
+                                </div>
+                                <div class="col"></div>
                             </div>
-                            <div class="col"></div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="paginas" class="paginas my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg">
-                    <a href="./vulners/" class="text-decoration-none">
-                        <div class="paginas__card card text-center shadow">
+        <section id="paginas" class="paginas my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg">
+                        <a href="./vulners/" class="text-decoration-none">
+                            <div class="paginas__card card text-center shadow">
+                                <img src="./assets/img/ethicalhacking.avif" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-4">Procurar Falhas</h5>
+                                    <p class="card-text">Some quick example text</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg">
+                        <a href="#" class="text-decoration-none">
+                            <div class="paginas__card card text-center shadow">
+                                <img src="./assets/img/criptografia.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-4">Criptografias</h5>
+                                    <p class="card-text">Some quick example text to build</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg">
+                        <a href="#" class="text-decoration-none">
+                            <div class="paginas__card card text-center shadow">
+                                <img src="./assets/img/learning.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-4">Tutoriais</h5>
+                                    <p class="card-text">Some quick example text to build on the card</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <div class="col-lg">
+                        <a href="#" class="text-decoration-none">
+                            <div class="paginas__card card text-center shadow">
+                                <img src="./assets/img/engrenagem.jpg" class="card-img-top" alt="...">
+                                <div class="card-body">
+                                    <h5 class="card-title mb-4">Config</h5>
+                                    <p class="card-text">Some quick example text</p>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <!--
+                    <div class="col">
+                        <div class="card bg-dark">
                             <img src="./assets/img/ethicalhacking.avif" class="card-img-top" alt="...">
                             <div class="card-body">
-                                <h5 class="card-title mb-4">Procurar Falhas</h5>
-                                <p class="card-text">Some quick example text</p>
+                                <h5 class="card-title">CTF</h5>
+                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                             </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg">
-                    <a href="#" class="text-decoration-none">
-                        <div class="paginas__card card text-center shadow">
-                            <img src="./assets/img/criptografia.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title mb-4">Criptografias</h5>
-                                <p class="card-text">Some quick example text to build</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg">
-                    <a href="#" class="text-decoration-none">
-                        <div class="paginas__card card text-center shadow">
-                            <img src="./assets/img/learning.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title mb-4">Tutoriais</h5>
-                                <p class="card-text">Some quick example text to build on the card</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg">
-                    <a href="#" class="text-decoration-none">
-                        <div class="paginas__card card text-center shadow">
-                            <img src="./assets/img/engrenagem.jpg" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title mb-4">Config</h5>
-                                <p class="card-text">Some quick example text</p>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <!--
-                <div class="col">
-                    <div class="card bg-dark">
-                        <img src="./assets/img/ethicalhacking.avif" class="card-img-top" alt="...">
-                        <div class="card-body">
-                            <h5 class="card-title">CTF</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
                         </div>
                     </div>
+                    -->
                 </div>
-                -->
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="musica" class="musica my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <h3 class="musica__title text-center">Musica</h3>
-                    <p class="text-center">Não estava brincando, você deveria colocar uma musica para escultar.</p>
-                    <div class="musica__content">
-                        <div class="row player">
-                            <div class="col-md-3">
-                                <img class="musica__art w-100" src="https://akamai.sscdn.co/uploadfile/letras/albuns/d/8/8/0/11693.jpg" alt="">
-                            </div>
-                            <div class="col-md">
-                                <div class="info p-4">
-                                    <div class="d-flex justify-content-between">
-                                        <h4 class="musica__nome">Metallica the unforgiven 2</h4>
-                                        <i id="musicLike" class="bi bi-heart"></i>
-                                    </div>
-                                    <p class="musica__autor">metallica</p>
-                                    <div id="waveform"></div>
-                                    <div class="musica__controls d-flex justify-content-between">
-                                        <div>
-                                            <i class="bi bi-shuffle"></i>
+        <section id="musica" class="musica my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <h3 class="musica__title text-center">Musica</h3>
+                        <p class="text-center">Não estava brincando, você deveria colocar uma musica para escultar.</p>
+                        <div class="musica__content">
+                            <div class="row player">
+                                <div class="col-md-3">
+                                    <img class="musica__art w-100" src="https://akamai.sscdn.co/uploadfile/letras/albuns/d/8/8/0/11693.jpg" alt="">
+                                </div>
+                                <div class="col-md">
+                                    <div class="info p-4">
+                                        <div class="d-flex justify-content-between">
+                                            <h4 class="musica__nome">Metallica the unforgiven 2</h4>
+                                            <i id="musicLike" class="bi bi-heart"></i>
                                         </div>
-                                        <div>
-                                            <i class="bi bi-skip-backward-fill"></i>
-                                            <i id="musicPlay" class="bi bi-play-circle px-4"></i>
-                                            <i class="bi bi-skip-forward-fill"></i>
-                                        </div>
-                                        <div>
-                                            <i class="bi bi-download"></i>
+                                        <p class="musica__autor">metallica</p>
+                                        <div id="waveform"></div>
+                                        <div class="musica__controls d-flex justify-content-between">
+                                            <div>
+                                                <i class="bi bi-shuffle"></i>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-skip-backward-fill"></i>
+                                                <i id="musicPlay" class="bi bi-play-circle px-4"></i>
+                                                <i class="bi bi-skip-forward-fill"></i>
+                                            </div>
+                                            <div>
+                                                <i class="bi bi-download"></i>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
@@ -233,104 +239,104 @@
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="ferramentas" class="ferramentas my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <div class="ferramentas__content">
-                        <h3 class="ferramentas__title text-center">Ferramentas recomendadas</h3>
-                        <p class="text-center">Ferramentas não são feitas para você depender delas, são para ajudar sua vida...</p>
-                        <div class="carousel">
-                            <div><a href="https://www.kali.org/tools/metasploit-framework/" rel="noopener noreferrer" target="_blank">
-                                <img src="https://www.kali.org/tools/metasploit-framework/images/metasploit-framework-logo.svg" alt="metasploit">
-                            </a></div>
-                            <div><a href="https://www.kali.org/tools/burpsuite/" rel="noopener noreferrer" target="_blank">
-                                <img src="https://www.kali.org/tools/burpsuite/images/burpsuite-logo.svg" alt="burp">
-                            </a></div>
-                            <div><a href="https://www.kali.org/tools/zaproxy/" rel="noopener noreferrer" target="_blank">
-                                <img src="https://www.kali.org/tools/zaproxy/images/zaproxy-logo.svg" alt="zap">
-                            </a></div>
-                            <div><a href="https://www.kali.org/tools/nmap/" rel="noopener noreferrer" target="_blank">
-                                <img src="https://www.kali.org/tools/nmap/images/nmap-logo.svg" alt="nmap">
-                            </a></div>
-                            <div><a href="https://www.kali.org/tools/sqlmap/" rel="noopener noreferrer" target="_blank">
-                                <img src="https://www.kali.org/tools/sqlmap/images/sqlmap-logo.svg" alt="sqlmap">
-                            </a></div>
-                            <div><a href="https://www.kali.org/tools/commix/" rel="noopener noreferrer" target="_blank">
-                                <img src="https://www.kali.org/tools/commix/images/commix-logo.svg" alt="commix">
-                            </a></div>
-                            <div><a href="https://www.kali.org/tools/nikto/" rel="noopener noreferrer" target="_blank">
-                                <img src="https://www.kali.org/tools/nikto/images/nikto-logo.svg" alt="nikto">
-                            </a></div>
-                            <div><a href="https://www.kali.org/tools/hydra/" rel="noopener noreferrer" target="_blank">
-                                <img src="https://www.kali.org/tools/hydra/images/hydra-logo.svg" alt="hdra">
-                            </a></div>
-                            <div><a href="https://www.kali.org/tools/hashcat/" rel="noopener noreferrer" target="_blank">
-                                <img src="https://www.kali.org/tools/hashcat/images/hashcat-logo.svg" alt="hashcat">
-                            </a></div>
+        <section id="ferramentas" class="ferramentas my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="ferramentas__content">
+                            <h3 class="ferramentas__title text-center">Ferramentas recomendadas</h3>
+                            <p class="text-center">Ferramentas não são feitas para você depender delas, são para ajudar sua vida...</p>
+                            <div class="carousel">
+                                <div><a href="https://www.kali.org/tools/metasploit-framework/" rel="noopener noreferrer" target="_blank">
+                                    <img src="https://www.kali.org/tools/metasploit-framework/images/metasploit-framework-logo.svg" alt="metasploit">
+                                </a></div>
+                                <div><a href="https://www.kali.org/tools/burpsuite/" rel="noopener noreferrer" target="_blank">
+                                    <img src="https://www.kali.org/tools/burpsuite/images/burpsuite-logo.svg" alt="burp">
+                                </a></div>
+                                <div><a href="https://www.kali.org/tools/zaproxy/" rel="noopener noreferrer" target="_blank">
+                                    <img src="https://www.kali.org/tools/zaproxy/images/zaproxy-logo.svg" alt="zap">
+                                </a></div>
+                                <div><a href="https://www.kali.org/tools/nmap/" rel="noopener noreferrer" target="_blank">
+                                    <img src="https://www.kali.org/tools/nmap/images/nmap-logo.svg" alt="nmap">
+                                </a></div>
+                                <div><a href="https://www.kali.org/tools/sqlmap/" rel="noopener noreferrer" target="_blank">
+                                    <img src="https://www.kali.org/tools/sqlmap/images/sqlmap-logo.svg" alt="sqlmap">
+                                </a></div>
+                                <div><a href="https://www.kali.org/tools/commix/" rel="noopener noreferrer" target="_blank">
+                                    <img src="https://www.kali.org/tools/commix/images/commix-logo.svg" alt="commix">
+                                </a></div>
+                                <div><a href="https://www.kali.org/tools/nikto/" rel="noopener noreferrer" target="_blank">
+                                    <img src="https://www.kali.org/tools/nikto/images/nikto-logo.svg" alt="nikto">
+                                </a></div>
+                                <div><a href="https://www.kali.org/tools/hydra/" rel="noopener noreferrer" target="_blank">
+                                    <img src="https://www.kali.org/tools/hydra/images/hydra-logo.svg" alt="hdra">
+                                </a></div>
+                                <div><a href="https://www.kali.org/tools/hashcat/" rel="noopener noreferrer" target="_blank">
+                                    <img src="https://www.kali.org/tools/hashcat/images/hashcat-logo.svg" alt="hashcat">
+                                </a></div>
+                            </div>
                         </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="comunidade" class="comunidade my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-md my-auto">
-                    <div class="comunidade__content">
-                        <h4>Nossa comunidade</h4>
-                        <p>junte-se a nossa comunidade no Discord para batermos um papo sobre hacking e programação</p>
-                        <p>juntos aprendemos mais, sem contar tambem que é mais divertido.</p>
-                        <a href="#" class="btn buttonPurple">Faça parte</a>
+        <section id="comunidade" class="comunidade my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md my-auto">
+                        <div class="comunidade__content">
+                            <h4>Nossa comunidade</h4>
+                            <p>junte-se a nossa comunidade no Discord para batermos um papo sobre hacking e programação</p>
+                            <p>juntos aprendemos mais, sem contar tambem que é mais divertido.</p>
+                            <a href="#" class="btn buttonPurple">Faça parte</a>
+                        </div>
                     </div>
-                </div>
-                <div class="col-md">
-                    <div class="comunidade__content">
-                        <img class="w-100" src="https://thebughunter.io/wp-content/uploads/2021/12/passo-4.png" alt="discord">
+                    <div class="col-md">
+                        <div class="comunidade__content">
+                            <img class="w-100" src="https://thebughunter.io/wp-content/uploads/2021/12/passo-4.png" alt="discord">
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="relate" class="relate my-5">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg">
-                    <div class="relate__content">
-                        <h3>Achou algum Bug?</h3>
-                        <p>Caso tenha encontrado alugm Bug no site ficaremos muito felizes se você relatar ou entrar em contato.
-                            você tambem pode dar dicas de como melhorar a plataforma.
-                        </p>
-                        <p>Você pode relatar em algum desses endereços.</p>
+        <section id="relate" class="relate my-5">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg">
+                        <div class="relate__content">
+                            <h3>Achou algum Bug?</h3>
+                            <p>Caso tenha encontrado alugm Bug no site ficaremos muito felizes se você relatar ou entrar em contato.
+                                você tambem pode dar dicas de como melhorar a plataforma.
+                            </p>
+                            <p>Você pode relatar em algum desses endereços.</p>
+                        </div>
                     </div>
-                </div>
-                <div class="col-lg">
-                    <div class="relate__content">
-                        <ul class="relate__list px-0">
-                            <li class="py-2">
-                                <i class="bi bi-github"></i> <a href="https://github.com/CarlosAllberto/VWAT/issues" target="_blank">CarlosAllberto/VWAT/issues</a>
-                            </li>
-                            <li class="py-2">
-                                <i class="bi bi-github"></i> <a href="https://github.com/N3utr0n-FHC" target="_blank">N3utr0n-FHC</a>
-                            </li>
-                            <li class="py-2">
-                                <i class="bi bi-telegram"></i> <a href="#" target="_blank">CarlosAllberto</a>
-                            </li>
-                            <li class="py-2">
-                                <i class="bi bi-github"></i> <a href="#" target="_blank">N3utr0n-FHC</a>
-                            </li>
-                        </ul>
+                    <div class="col-lg">
+                        <div class="relate__content">
+                            <ul class="relate__list px-0">
+                                <li class="py-2">
+                                    <i class="bi bi-github"></i> <a href="https://github.com/CarlosAllberto/VWAT/issues" target="_blank">CarlosAllberto/VWAT/issues</a>
+                                </li>
+                                <li class="py-2">
+                                    <i class="bi bi-github"></i> <a href="https://github.com/N3utr0n-FHC" target="_blank">N3utr0n-FHC</a>
+                                </li>
+                                <li class="py-2">
+                                    <i class="bi bi-telegram"></i> <a href="#" target="_blank">CarlosAllberto</a>
+                                </li>
+                                <li class="py-2">
+                                    <i class="bi bi-github"></i> <a href="#" target="_blank">N3utr0n-FHC</a>
+                                </li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
+    </main>
 
     <footer class="footer" id="footer">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">

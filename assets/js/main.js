@@ -29,12 +29,22 @@ burguer = (x) => {
     }
 }
 
+/*
 sidebar = () => {
     const sidebar = document.querySelector("div#sidebar");
     sidebar.classList.toggle("open");
 }
-
+*/
 resultSearch = () => {
     const result = document.querySelector("#result-search");
     result.classList.toggle("open");
 }
+
+const sidebar = document.querySelector("#sidebar");
+sidebar.addEventListener("click", () => {
+    let address = document.querySelectorAll(".sidebar__address");
+    sidebar.style.width = "13rem";
+    address.forEach(e => {
+        e.style.display = "block";
+    });
+});

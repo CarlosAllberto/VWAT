@@ -111,6 +111,7 @@ main {
   top: 0;
   left: 0;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349);
+  z-index: 1;
 }
 .sidebar a {
   color: white;
@@ -125,15 +126,18 @@ main {
 .sidebar a.active .sidebar__icon {
   color: #8FF240;
 }
+.sidebar .accordion-item:hover {
+  background: #1B1D20;
+}
 .sidebar ul {
   list-style: none;
   overflow-y: scroll;
-  height: 525px;
+  height: 250px;
   padding: 0;
 }
 .sidebar ul li {
-  color: #AA88FF;
-  padding: 10px 0;
+  background: #282A2D;
+  padding: 5px 0;
   border-bottom: 0.5px solid #1B1D20;
   padding-left: 1rem;
 }
@@ -194,13 +198,13 @@ main {
   .sidebar {
     width: 3rem;
   }
-  .sidebar__adress {
+  .sidebar__address {
     display: none;
   }
   .sidebar__arrow {
     display: none;
   }
-  .vulnersHome {
+  main {
     margin-left: 3rem;
   }
   .footer {

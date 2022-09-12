@@ -8,7 +8,7 @@ $sidebar = '
                 <div class="sidebar__icon d-flex align-items-center justify-content-center">
                     <i class="bi bi-house"></i>
                 </div>
-                <div class="sidebar__adress my-auto">
+                <div class="sidebar__address my-auto">
                     <p class="my-auto">Home</p>
                 </div>
             </a>
@@ -18,19 +18,19 @@ $sidebar = '
                 <div class="sidebar__icon d-flex align-items-center justify-content-center">
                     <i class="bi bi-person"></i>
                 </div>
-                <div class="sidebar__adress my-auto">
+                <div class="sidebar__address my-auto">
                     <p class="my-auto">My profile</p>
                 </div>
             </a>
         </div>
         <div id="accordionFlushExample">
-            <div class="accordion-item">
+            <div class="accordion-item rounded">
                 <h2 class="accordion-header" id="flush-headingOne">
                     <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne">
                         <div class="sidebar__icon d-flex align-items-center justify-content-center">
                             <i class="bi bi-bug"></i>
                         </div>
-                        <div class="sidebar__adress my-auto">
+                        <div class="sidebar__address my-auto">
                             <p class="my-auto">Vulnerability</p>
                         </div>
                         <div class="sidebar__arrow">
@@ -111,7 +111,7 @@ $sidebar = '
                 <div class="sidebar__icon d-flex align-items-center justify-content-center">
                     <i class="bi bi-lock"></i>
                 </div>
-                <div class="sidebar__adress my-auto">
+                <div class="sidebar__address my-auto">
                     <p class="my-auto">Crytography</p>
                 </div>
             </a>
@@ -121,19 +121,19 @@ $sidebar = '
                 <div class="sidebar__icon d-flex align-items-center justify-content-center">
                     <i class="bi bi-book"></i>
                 </div>
-                <div class="sidebar__adress my-auto">
+                <div class="sidebar__address my-auto">
                     <p class="my-auto">Tutorial</p>
                 </div>
             </a>
         </div>
         <div id="accordionFlushExample">
-            <div class="accordion-item">
+            <div class="accordion-item rounded">
                 <h2 class="accordion-header" id="flush-headingTwo">
                 <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseTwo" aria-expanded="false" aria-controls="flush-collapseTwo">
                 <div class="sidebar__icon d-flex align-items-center justify-content-center">
                     <i class="bi bi-gear"></i>
                 </div>
-                <div class="sidebar__adress my-auto">
+                <div class="sidebar__address my-auto">
                     <p class="my-auto">Config</p>
                 </div>
                 <div class="sidebar__arrow">

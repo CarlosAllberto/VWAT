@@ -53,11 +53,11 @@
         </div>
     </div>
 
-    <nav class="header navbar navbar-expand-lg bg-dark navbar-dark" style="z-index: 1;">
+    <nav class="header navbar navbar-expand-lg bg-dark navbar-dark fixed-top" style="z-index: 2;">
         <div class="container-fluid">
             <a class="navbar-brand header__logo d-flex" href="./">
-                <img src="./assets/img/logo.png" alt="logo" width="40" height="40" class="d-inline-block align-text-top">
-                <span class="navbar-brand mb-0 h1">VWAT</span>              
+                <img src="./assets/img/logo.png" alt="logo" width="35" height="35" class="d-inline-block align-text-top">
+                <span class="header__title navbar-brand mb-0 h1">VWAT</span>              
             </a> 
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -338,8 +338,8 @@
         </section>
     </main>
 
-    <footer class="footer" id="footer">
-        <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <footer class="footer bg-dark" id="footer">
+        <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container-fluid container">
                 <a class="navbar-brand footer__logo d-flex" href="#">
                     <img src="./assets/img/logo.png" alt="logo" width="40" height="40" class="d-inline-block align-text-top">
@@ -362,7 +362,7 @@
             </div>
         </nav>
         <div class="container">
-            <div class="row" style="height: 80vh;">
+            <div class="row" style="height: 75vh;">
                 <div class="col-lg-3 m-auto">
                     <h5 class="text-center mb-3">VWAT</h5>
                     <p class="text-center">Lorem ipsum dolor, sit amet consectetur adipisicing elit. Minus perspiciatis nihil beatae iste, voluptates qui sunt nobis expedita, sed laborum eos nostrum ipsa optio dolores dolorem suscipit tenetur labore mollitia.</p>
@@ -406,10 +406,10 @@
                     </ul>
                 </div>
             </div>
-        </div>
-        <div class="footer__copyright text-center p-4">
-            © 2022 Copyright:
-            <a class="text-reset fw-bold text-decoration-none" href="https://vwat.com/">VWAT.com.br</a>
+            <div class="footer__copyright text-center py-3 rounded">
+                © 2022 Copyright:
+                <a class="text-reset fw-bold text-decoration-none" href="https://vwat.com/">VWAT.com.br</a>
+            </div>
         </div>
     </footer>
 

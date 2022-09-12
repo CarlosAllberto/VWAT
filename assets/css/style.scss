@@ -126,6 +126,7 @@ main {
     top: 0;
     left: 0;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349);
+    z-index: 1;
     a {
         color: white;
         text-decoration: none;
@@ -139,15 +140,19 @@ main {
             }
         }
     }
+    .accordion-item:hover {
+        background: $cor5;
+    }
     ul {
         list-style: none;
         overflow-y:scroll;
-        height: 525px;
+        //height: 525px;
+        height: 250px;
         padding: 0;
     }
     ul li {
-        color: $cor3;
-        padding: 10px 0;
+        background: $cor4;
+        padding: 5px 0;
         border-bottom: .5px solid $cor5;
         padding-left: 1rem;
         &:hover {
@@ -198,14 +203,14 @@ main {
 @media (max-width: 720px) {
     .sidebar {
         width: 3rem;
-        &__adress {
+        &__address {
             display: none;
         }
         &__arrow {
             display: none;
         }
     }
-    .vulnersHome {
+    main {
         margin-left: 3rem;
     }
     .footer {

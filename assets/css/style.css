@@ -246,4 +246,10 @@ main {
   .header__title {
     display: none;
   }
+  .login__content {
+    padding: 20px;
+    height: auto;
+    margin: 40px 20px;
+    border-radius: 3px;
+  }
 }/*# sourceMappingURL=style.css.map */

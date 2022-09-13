@@ -61,9 +61,9 @@ if(isset($_POST["username"]) || isset($_POST["password"])) {
         <section class="login" id="login">
             <div class="">
                 <div class="row">
-                    <div class="col-lg-6">
+                    <div class="col-lg-6 col-12">
                         <div class="login__content py-5">
-                            <div class="d-flex justify-content-between pb-5">
+                            <div class="d-flex justify-content-between pb-lg-5 pb-3">
                                 <div class="login__header d-flex align-items-center">
                                     <img src="./assets/img/logo.png" width="45" height="45" alt="logo">
                                     <span class="mb-0 h3">VWAT</span>
@@ -73,7 +73,7 @@ if(isset($_POST["username"]) || isset($_POST["password"])) {
                                     <a href="#">Crie a sua conta aqui</a>
                                 </div>
                             </div>
-                            <div class="pt-5">
+                            <div class="pt-lg-5 pt-3">
                                 <form action="" method="post">
                                     <h1>Log in to VWAT</h1>
                                     <?php

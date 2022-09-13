@@ -254,4 +254,12 @@ main {
             display: none;
         }
     }
+    .login {
+        &__content {
+            padding: 20px;
+            height: auto;
+            margin: 40px 20px;
+            border-radius: 3px;
+        }
+    }
 }

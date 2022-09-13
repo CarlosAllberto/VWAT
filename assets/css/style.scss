@@ -45,6 +45,7 @@ body {
     }
 }
 main {
+    margin-top: 70px;
     margin-left: 13rem;
 }
 .apresentacao {
@@ -146,8 +147,7 @@ main {
     ul {
         list-style: none;
         overflow-y:scroll;
-        //height: 525px;
-        height: 250px;
+        max-height: 250px;
         padding: 0;
     }
     ul li {
@@ -191,6 +191,38 @@ main {
         background: $cor4;
     }
 }
+
+.login {
+    background-image: url(../img/criptografia.jpg);
+    //https://i.pinimg.com/originals/c1/34/c2/c134c246d293905c9ed09ad77c451226.gif
+    height: 100vh;
+    width: 100vw;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: right;
+    &__header span {
+        color: $cor2;
+    }
+    &__content {
+        background: $cor5;
+        height: 100vh;
+        padding: 0 130px;
+    }
+    a {
+        color: $cor3;
+        text-decoration: none;
+    }
+    input {
+        background: transparent;
+        border: 1px solid gray;
+        border-radius: 3px;
+        &:focus {
+            background: transparent;
+        }
+    }
+}
+
+
 @keyframes blind {
     0%, 100% {
         opacity: 1;

@@ -17,9 +17,7 @@
     <meta name="theme-color" content="darkgreen" />
     <title>VWAT - Home</title>
 
-    <!-- CSS only -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
 
     <link rel="stylesheet" href="style/style.css">
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
@@ -85,11 +83,6 @@
                     </ul>
                 </li>
             </ul>
-            <!--
-            <div class="d-flex m-auto" role="search">
-                <input class="form-control me-2 bg-dark" type="search" placeholder="Search" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Search" readonly>
-            </div>
-            -->
             <ul class="header__redes d-flex navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="#" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
@@ -115,13 +108,12 @@
         <section id="apresentacao" class="apresentacao my-5">
             <div class="container">
                 <div class="row">
-                    <p class="apresentacao__sorte">すべてのハッカー、ハッキングの世界に頑張ってください</p>
+                    <p class="apresentacao__sorte p-0 m-0">すべてのハッカー、ハッキングの世界に頑張ってください</p>
                     <h1 class="apresentacao__title text-center textWriter">VWAT um Website para testes de Intrusão.</h1>
                     <p class="text-center">Obrigado por usar a nossa plataforma</p>
                     <div class="col-md-4 mt-3">
                         <div class="apresentacao__content shadow rounded">
                             <img class="w-100" id="skull" src="./assets/img/a94757118997165.60943557b01f2.gif" alt="skull">
-                            <!--class="col-md-12 float-md-start mb-2 me-md-3"-->
                         </div>
                     </div>
                     <div class="col-md mt-3">
@@ -185,17 +177,6 @@
                             </div>
                         </a>
                     </div>
-                    <!--
-                    <div class="col">
-                        <div class="card bg-dark">
-                            <img src="./assets/img/ethicalhacking.avif" class="card-img-top" alt="...">
-                            <div class="card-body">
-                                <h5 class="card-title">CTF</h5>
-                                <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-                            </div>
-                        </div>
-                    </div>
-                    -->
                 </div>
             </div>
         </section>
@@ -220,15 +201,15 @@
                                         <p class="musica__autor">metallica</p>
                                         <div id="waveform"></div>
                                         <div class="musica__controls d-flex justify-content-between">
-                                            <div>
+                                            <div class="d-flex align-items-center">
                                                 <i class="bi bi-shuffle"></i>
                                             </div>
-                                            <div>
+                                            <div class="d-flex align-items-center">
                                                 <i class="bi bi-skip-backward-fill"></i>
                                                 <i id="musicPlay" class="bi bi-play-circle px-4"></i>
                                                 <i class="bi bi-skip-forward-fill"></i>
                                             </div>
-                                            <div>
+                                            <div class="d-flex align-items-center">
                                                 <i class="bi bi-download"></i>
                                             </div>
                                         </div>

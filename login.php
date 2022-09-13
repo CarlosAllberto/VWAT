@@ -26,6 +26,16 @@ if(isset($_POST["username"]) || isset($_POST["password"])) {
         }
     }
 }
+
+/*
+                        <?php
+                            if($msg_error) {
+                                echo '<div class="alert alert-danger">',
+                                $msg_error,
+                                '</div>';
+                            }
+                        ?> 
+*/
 ?>
 
 <!DOCTYPE html>
@@ -35,55 +45,71 @@ if(isset($_POST["username"]) || isset($_POST["password"])) {
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>VWAT - Login</title>
-    <meta name="theme-color" content="darkgreen" />
     <link rel="shortcut icon" href="./img/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"/>
-    <!-- CSS only -->
+
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
-    <!-- JavaScript Bundle with Popper -->
+
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2" crossorigin="anonymous"></script>
 
     <link rel="stylesheet" href="./style/style-login.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
 </head>
+
 <body>
-    <main>
-        <div class="container">
-            <div class="row justify-content-md-center">
-                <div class="col-sm-4 order-md-2">
-                    <div class="conteudo">
-                        <img src="./img/logo.png" alt="logo">
-                        <h2>VWAT</h2>
-                        <?php
-                            if($msg_error) {
-                                echo '<div class="alert alert-danger">',
-                                $msg_error,
-                                '</div>';
-                            }
-                        ?> 
-                        <form action="" method="post">
-                            <div class="mb-3">
-                                <label for="Username">Username</label>
-                                <input type="text" id="username" name="username" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
+    <main class="m-0">
+        <section class="login" id="login">
+            <div class="">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="login__content py-5">
+                            <div class="d-flex justify-content-between pb-5">
+                                <div class="login__header d-flex align-items-center">
+                                    <img src="./assets/img/logo.png" width="45" height="45" alt="logo">
+                                    <span class="mb-0 h3">VWAT</span>
+                                </div>
+                                <div>
+                                    <p class="m-0">Não tem uma conta?</p>
+                                    <a href="#">Crie a sua conta aqui</a>
+                                </div>
                             </div>
-                            <div class="mb-3">
-                                <label for="password">Password</label>
-                                <input type="password" id="password" name="password" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
+                            <div class="pt-5">
+                                <form action="" method="post">
+                                    <h1>Log in to VWAT</h1>
+                                    <?php
+                                        if($msg_error) {
+                                            echo '<div class="alert alert-danger">',
+                                            $msg_error,
+                                            '</div>';
+                                        }
+                                    ?> 
+                                    <div class="my-3">
+                                        <input class="text-light form-control" type="text" name="username" id="username" placeholder="Email">
+                                    </div>
+                                    <div class="my-3">
+                                    <div class="input-group">
+                                        <input type="password" name="password" class="text-light form-control" aria-label="Amount (to the nearest dollar)" placeholder="Senha">
+                                        <div class="input-group-append">
+                                            <span class="input-group-text bg-dark text-light">
+                                                <i class="bi bi-eye"></i>
+                                            </span>
+                                        </div>
+                                    </div>
+                                    <div class="my-3">
+                                        <button class="buttonPurple w-100 rounded py-2" type="submit">Log in</button>
+                                    </div>
+                                    <hr>
+                                    <div>
+                                        <a class="d-block py-1" href="#">Esqueceu sua senha?</a>
+                                        <a class="d-block py-1" href="#">Reenviar email de confirmação</a>
+                                    </div>
+                                </form>
                             </div>
-                            <div class="d-md-flex justify-content-md-end">
-                                <button class="btn btn-primary" type="submit">Submit</button>
-                            </div>
-                        </form>
-                    </div>
-                </div>
-                <div class="col-sm-5 order-md-1">
-                    <div class="conteudo">
-                        <h3>Não sabe logar?</h3>
-                        <p>Caso não tenha feito as Configurações nescessrias ou não sabe como logar, de uma olhada no Tutorial de Configuração</p>
-                        <a class="btn btn-primary" href="#" role="button">Saiba Mais</a>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
     </main>
 </body>
 </html>

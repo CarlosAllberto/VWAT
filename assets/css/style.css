@@ -34,6 +34,7 @@ body {
 }
 
 main {
+  margin-top: 70px;
   margin-left: 13rem;
 }
 
@@ -132,7 +133,7 @@ main {
 .sidebar ul {
   list-style: none;
   overflow-y: scroll;
-  height: 250px;
+  max-height: 250px;
   padding: 0;
 }
 .sidebar ul li {
@@ -175,6 +176,35 @@ main {
 }
 .footer__copyright {
   background: #282A2D;
+}
+
+.login {
+  background-image: url(../img/criptografia.jpg);
+  height: 100vh;
+  width: 100vw;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: right;
+}
+.login__header span {
+  color: #8FF240;
+}
+.login__content {
+  background: #1B1D20;
+  height: 100vh;
+  padding: 0 130px;
+}
+.login a {
+  color: #AA88FF;
+  text-decoration: none;
+}
+.login input {
+  background: transparent;
+  border: 1px solid gray;
+  border-radius: 3px;
+}
+.login input:focus {
+  background: transparent;
 }
 
 @-webkit-keyframes blind {

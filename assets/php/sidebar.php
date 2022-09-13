@@ -142,7 +142,25 @@ $sidebar = '
                 </button>
                 </h2>
                 <div id="flush-collapseTwo" class="accordion-collapse collapse" aria-labelledby="flush-headingTwo" data-bs-parent="#accordionFlushExample">
-                <div class="accordion-body">Placeholder content for this accordion, which is intended to demonstrate the <code>.accordion-flush</code> class. This is the second item\'s accordion body. Let\'s imagine this being filled with some actual content.</div>
+                <div class="accordion-body">
+                    <ul>
+                        <a href="#">
+                            <li>
+                                <p>Action</p>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                <p>Configurações</p>
+                            </li>
+                        </a>
+                        <a href="#">
+                            <li>
+                                <p>Logout</p>
+                            </li>
+                        </a>
+                    </ul>
+                </div>
                 </div>
             </div>
         </div>

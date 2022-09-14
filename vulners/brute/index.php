@@ -15,28 +15,50 @@
     $method = $level == "impossible" ? "post" : "get";
 ?>
 
-<i class="bi bi-lightbulb"></i>
-<i class="bi bi-terminal-dash" onclick="terminal()"></i>
-<h1 class="textWrite">Brute Force</h1>
-<div class="row justify-content-center">
-    <div class="col-md-5">
-        <div class="conteudo">
-            <form action="<? echo $page; ?>" method="<? echo $method; ?>">
-                <div class="mb-3">
-                    <label for="user">Username</label>
-                    <input type="text" name="user" id="user" class="form-control" placeholder="Username" aria-label="Username" aria-describedby="basic-addon1">
-                </div>
-                <div class="mb-3">
-                    <label for="pass">Password</label>
-                    <input type="password" name="pass" id="pass" class="form-control" placeholder="Password" aria-label="Password" aria-describedby="basic-addon1">
-                </div>
-                <div class="d-md-flex justify-content-md-end">
-                    <button type="submit" class="btn btn-primary" value="submit" name="submit">Login</button>
-                </div>
-            </form>
+<div class="row">
+    <div class="col">
+        <div class="content">
+            <div>
+                <i class="bi bi-lightbulb"></i>
+                <i class="bi bi-terminal-dash"></i>
+            </div>
+            <div class="pt-lg-5 pt-3">
+                <form action="" method="post">
+                    <h1>Log in to VWAT</h1>
+                    <?php
+                        if($msg_error) {
+                            echo '<div class="alert alert-danger">',
+                            $msg_error,
+                            '</div>';
+                        }
+                    ?> 
+                    <div class="my-3">
+                        <input class="text-light form-control" type="text" name="username" id="username" placeholder="Username">
+                    </div>
+                    <div class="my-3">
+                    <div class="input-group">
+                        <input type="password" id="password" name="password" class="text-light form-control" aria-label="Amount (to the nearest dollar)" placeholder="Senha">
+                        <div class="input-group-append">
+                            <span class="input-group-text bg-dark text-light" id="showPassword">
+                                <i class="bi bi-eye" id="eyePassword"></i>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="my-3">
+                        <button class="buttonPurple w-100 rounded py-2" type="submit">Log in</button>
+                    </div>
+                    <hr>
+                    <div>
+                        <a class="d-block py-1" href="#">Esqueceu sua senha?</a>
+                        <a class="d-block py-1" href="#">Reenviar email de confirmação</a>
+                    </div>
+                </form>
+            </div>
+            <div>
+                <?php 
+                    echo "<h3>Level: {$level}</h3>";
+                ?>
+            </div>
         </div>
     </div>
 </div>
-<?php 
-    echo "<h3>Level: {$level}</h3>";
-?>

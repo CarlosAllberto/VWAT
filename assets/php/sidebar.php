@@ -23,6 +23,7 @@ $sidebar = '
                 </div>
             </a>
         </div>
+        <hr>
         <div id="accordionFlushExample">
             <div class="accordion-item rounded">
                 <h2 class="accordion-header" id="flush-headingOne">

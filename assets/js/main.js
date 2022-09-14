@@ -1,15 +1,18 @@
+const btShow = document.querySelector("#showPassword");
 showPassword = () => {
-    let inputPass = document.querySelector("input#pass");
-    let btShow = document.querySelector;("#togglePassword");
-
+    let inputPass = document.querySelector("input#password");
+    let eyePassword = document.querySelector("#eyePassword")
     if (inputPass.getAttribute("type") == "password") {
         inputPass.setAttribute("type", "text");
-        btShow.setAttribute("class", "bi-eye");
+        eyePassword.setAttribute("class", "bi bi-eye-slash");
     } else {
         inputPass.setAttribute("type", "password");
-        btShow.setAttribute("class", "bi bi-eye-slash");
+        eyePassword.setAttribute("class", "bi bi-eye");
     }
 }
+btShow.addEventListener("click", () => {
+    showPassword();
+})
 
 animated = () => {
     principal.classList.toggle("animar");
@@ -27,17 +30,6 @@ burguer = (x) => {
     if (x.classList == "container change") {
         navbar.style.display = "block";
     }
-}
-
-/*
-sidebar = () => {
-    const sidebar = document.querySelector("div#sidebar");
-    sidebar.classList.toggle("open");
-}
-*/
-resultSearch = () => {
-    const result = document.querySelector("#result-search");
-    result.classList.toggle("open");
 }
 
 const sidebar = document.querySelector("#sidebar");

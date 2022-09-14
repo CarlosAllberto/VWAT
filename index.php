@@ -120,7 +120,7 @@
                         <div class="apresentacao__content p-4 shadow rounded">
                             <div class="row">
                                 <div class="col-3">
-                                    <div id="curve_chart" style="width: calc(100vh - 10rem); height: 100%"></div>
+                                    <div id="curve_chart" style="width: calc(100% - 10rem); height: 100%"></div>
                                 </div>
                                 <div class="col"></div>
                             </div>
@@ -185,7 +185,7 @@
             <div class="container">
                 <div class="row">
                     <div class="col">
-                        <h3 class="musica__title text-center">Musica</h3>
+                        <h2 class="musica__title text-center">Musica</h2>
                         <p class="text-center">Não estava brincando, você deveria colocar uma musica para escultar.</p>
                         <div class="musica__content">
                             <div class="row player">
@@ -227,7 +227,7 @@
                 <div class="row">
                     <div class="col">
                         <div class="ferramentas__content">
-                            <h3 class="ferramentas__title text-center">Ferramentas recomendadas</h3>
+                            <h2 class="ferramentas__title text-center">Ferramentas recomendadas</h2>
                             <p class="text-center">Ferramentas não são feitas para você depender delas, são para ajudar sua vida...</p>
                             <div class="carousel">
                                 <div><a href="https://www.kali.org/tools/metasploit-framework/" rel="noopener noreferrer" target="_blank">
@@ -268,11 +268,11 @@
             <div class="container">
                 <div class="row">
                     <div class="col-md my-auto">
-                        <div class="comunidade__content">
-                            <h4>Nossa comunidade</h4>
+                        <div class="comunidade__content text-center">
+                            <h2 class="mb-5">Nossa comunidade</h2>
                             <p>junte-se a nossa comunidade no Discord para batermos um papo sobre hacking e programação</p>
                             <p>juntos aprendemos mais, sem contar tambem que é mais divertido.</p>
-                            <a href="#" class="btn buttonPurple">Faça parte</a>
+                            <a href="#" class="btn buttonPurple w-75 text-center mt-5 py-2">Faça parte</a>
                         </div>
                     </div>
                     <div class="col-md">
@@ -288,8 +288,8 @@
             <div class="container">
                 <div class="row">
                     <div class="col-lg">
-                        <div class="relate__content">
-                            <h3>Achou algum Bug?</h3>
+                        <div class="relate__content text-center">
+                            <h2>Achou algum Bug?</h2>
                             <p>Caso tenha encontrado alugm Bug no site ficaremos muito felizes se você relatar ou entrar em contato.
                                 você tambem pode dar dicas de como melhorar a plataforma.
                             </p>

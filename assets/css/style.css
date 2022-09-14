@@ -2,6 +2,8 @@
   background: linear-gradient(#9B30F9, #84e);
   color: white;
   border: 2px solid #9B30F9;
+  text-transform: uppercase;
+  font-weight: 800;
 }
 .buttonPurple:hover {
   background: transparent;
@@ -107,25 +109,32 @@ main {
   width: 13rem;
   background: #282A2D;
   position: fixed;
-  min-height: 150vh;
-  height: auto;
+  height: 100vh;
   top: 0;
   left: 0;
   box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349);
+  color: rgb(150, 150, 150);
   z-index: 1;
 }
 .sidebar a {
-  color: white;
+  color: rgb(150, 150, 150);
   text-decoration: none;
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 .sidebar a:hover {
   background-color: #1B1D20;
 }
 .sidebar a.active {
+  color: white;
   background: #1B1D20;
 }
 .sidebar a.active .sidebar__icon {
   color: #8FF240;
+}
+.sidebar .accordion-item p {
+  font-weight: 600;
+  font-size: 0.9rem;
 }
 .sidebar .accordion-item:hover {
   background: #1B1D20;
@@ -154,7 +163,7 @@ main {
   text-align: center;
 }
 .sidebar__icon i {
-  font-size: 1.5rem;
+  font-size: 1.2rem;
 }
 .sidebar__container {
   padding: 0 5px;
@@ -176,6 +185,9 @@ main {
 }
 .footer__copyright {
   background: #282A2D;
+}
+.footer--vulners {
+  height: 0;
 }
 
 .login {
@@ -205,6 +217,9 @@ main {
 }
 .login input:focus {
   background: transparent;
+}
+.login #showPassword {
+  cursor: pointer;
 }
 
 @-webkit-keyframes blind {

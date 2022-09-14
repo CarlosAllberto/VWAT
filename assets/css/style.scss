@@ -8,6 +8,8 @@ $cor5: #1B1D20;
     background: linear-gradient(#9B30F9, #84e);
     color: white;
     border: 2px solid #9B30F9;
+    text-transform: uppercase;
+    font-weight: 800;
     &:hover {
         background: transparent;
         color: #9B30F9;
@@ -122,27 +124,36 @@ main {
     width: 13rem;
     background: $cor4;
     position: fixed;
-    min-height: 150vh;
-    height: auto;
+    height: 100vh;
     top: 0;
     left: 0;
     box-shadow: 1px 1px 2px rgba(0, 0, 0, 0.349);
+    color: rgb(150, 150, 150);
     z-index: 1;
     a {
-        color: white;
+        color: rgb(150, 150, 150);
         text-decoration: none;
+        font-weight: 600;
+        font-size: .9rem;
         &:hover {
             background-color: $cor5;
         }
         &.active {
+            color: white;
             background: $cor5;
             .sidebar__icon {
                 color: $cor2;
             }
         }
     }
-    .accordion-item:hover {
-        background: $cor5;
+    .accordion-item {
+        p {
+            font-weight: 600;
+            font-size: .9rem;
+        }
+        &:hover {
+            background: $cor5;
+        }
     }
     ul {
         list-style: none;
@@ -167,7 +178,7 @@ main {
         height: 3rem;
         text-align: center;
         i {
-            font-size: 1.5rem;
+            font-size: 1.2rem;
         }
     }
     &__container {
@@ -190,8 +201,10 @@ main {
     &__copyright {
         background: $cor4;
     }
+    &--vulners {
+        height: 0;
+    }
 }
-
 .login {
     background-image: url(../img/criptografia.jpg);
     //https://i.pinimg.com/originals/c1/34/c2/c134c246d293905c9ed09ad77c451226.gif
@@ -220,14 +233,14 @@ main {
             background: transparent;
         }
     }
+    #showPassword {
+        cursor: pointer;
+    }
 }
-
-
 @keyframes blind {
     0%, 100% {
         opacity: 1;
     }
-
     50% {
         opacity: 0;
     }

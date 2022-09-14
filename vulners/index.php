@@ -87,11 +87,6 @@
                     </ul>
                 </li>
             </ul>
-            <!--
-            <div class="d-flex m-auto" role="search">
-                <input class="form-control me-2 bg-dark" type="search" placeholder="Search" data-bs-toggle="modal" data-bs-target="#exampleModal" aria-label="Search" readonly>
-            </div>
-            -->
             <ul class="header__redes d-flex navbar-nav">
                 <li class="nav-item">
                   <a class="nav-link" aria-current="page" href="#" rel="noopener noreferrer"><i class="bi bi-facebook"></i></a>
@@ -120,7 +115,7 @@
         </section>
     </main>
 
-    <footer class="footer" id="footer">
+    <footer class="footer--vulners" id="footer--vulners">
         <div class="footer__copyright text-center p-4">
             © 2022 Copyright:
             <a class="text-reset fw-bold text-decoration-none" href="https://vwat.com/">VWAT.com.br</a>

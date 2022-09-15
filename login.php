@@ -20,7 +20,7 @@ if(isset($_POST["email"]) || isset($_POST["password"])) {
             if (!isset($_COOKIE)) {
                 setcookie("level", "low");
             }
-            header("Location: index.php");
+            header("Location: login.php");
         } else {
             $msg_error = "Email ou Senha Invalidos";
         }

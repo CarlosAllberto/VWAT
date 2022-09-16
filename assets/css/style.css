@@ -1,3 +1,11 @@
+.span-green {
+  color: #8FF240;
+}
+
+.span-purple {
+  color: #AA88FF;
+}
+
 .buttonPurple {
   background: linear-gradient(#9B30F9, #84e);
   color: white;
@@ -58,6 +66,9 @@ main {
   background: #282A2D;
 }
 
+.paginas .scrolling-wrapper {
+  overflow-x: auto;
+}
 .paginas__card {
   color: whitesmoke;
   height: 250px;

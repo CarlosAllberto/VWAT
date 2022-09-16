@@ -22,7 +22,7 @@ if(isset($_POST["email"]) || isset($_POST["password"])) {
             if (!isset($_COOKIE)) {
                 setcookie("level", "low");
             }
-            header("Location: login.php");
+            header("Location: index.php");
         } else {
             $msg_error = "Email ou Senha Invalidos";
         }
@@ -60,13 +60,13 @@ if(isset($_POST["email"]) || isset($_POST["password"])) {
                                     <span class="mb-0 h3">VWAT</span>
                                 </div>
                                 <div>
-                                    <p class="m-0">Não tem uma conta?</p>
-                                    <a href="./create.php">Crie a sua conta aqui</a>
+                                    <p class="m-0">Já possui uma conta?</p>
+                                    <a href="./login.php">Faça login aqui</a>
                                 </div>
                             </div>
                             <div class="pt-lg-5 pt-3">
                                 <form action="" method="post">
-                                    <h1>Log in to VWAT</h1>
+                                    <h1>Create Account</h1>
                                     <?php
                                         if($msg_error) {
                                             echo '<div class="alert alert-danger">',
@@ -75,19 +75,33 @@ if(isset($_POST["email"]) || isset($_POST["password"])) {
                                         }
                                     ?> 
                                     <div class="my-3">
+                                        <input class="text-light form-control" type="text" name="username" id="username" placeholder="Username">
+                                    </div>
+                                    <div class="my-3">
                                         <input class="text-light form-control" type="email" name="email" id="email" placeholder="Email">
                                     </div>
                                     <div class="my-3">
-                                    <div class="input-group">
-                                        <input type="password" id="password" name="password" class="text-light form-control" aria-label="Amount (to the nearest dollar)" placeholder="Senha">
-                                        <div class="input-group-append">
-                                            <span class="input-group-text bg-dark text-light" id="showPassword">
-                                                <i class="bi bi-eye" id="eyePassword"></i>
-                                            </span>
+                                        <div class="input-group">
+                                            <input type="password" id="password" name="password" class="text-light form-control" aria-label="Amount (to the nearest dollar)" placeholder="Senha">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text bg-dark text-light" id="showPassword">
+                                                    <i class="bi bi-eye" id="eyePassword"></i>
+                                                </span>
+                                            </div>
                                         </div>
                                     </div>
                                     <div class="my-3">
-                                        <button class="buttonPurple w-100 rounded py-2" type="submit">Log in</button>
+                                        <div class="input-group">
+                                            <input type="password" id="password-conf" name="password-conf" class="text-light form-control" aria-label="Amount (to the nearest dollar)" placeholder="Confirme a senha">
+                                            <div class="input-group-append">
+                                                <span class="input-group-text bg-dark text-light" id="showPassword">
+                                                    <i class="bi bi-eye" id="eyePassword"></i>
+                                                </span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="my-3">
+                                        <button class="buttonPurple w-100 rounded py-2" type="submit">Create</button>
                                     </div>
                                     <hr>
                                     <div>

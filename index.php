@@ -109,7 +109,7 @@
             <div class="container">
                 <div class="row">
                     <p class="apresentacao__sorte p-0 m-0">すべてのハッカー、ハッキングの世界に頑張ってください</p>
-                    <h1 class="apresentacao__title text-center textWriter">VWAT um Website para testes de Intrusão.</h1>
+                    <h1 class="apresentacao__title text-center"><span class="span-green">VWAT</span> um Website para <span class="span-purple textWriter">testes de Intrusão.</span></h1>
                     <p class="text-center">Obrigado por usar a nossa plataforma</p>
                     <div class="col-md-4 mt-3">
                         <div class="apresentacao__content shadow rounded">
@@ -120,7 +120,7 @@
                         <div class="apresentacao__content p-4 shadow rounded">
                             <div class="row">
                                 <div class="col-3">
-                                    <div id="curve_chart" style="width: calc(100% - 10rem); height: 100%"></div>
+                                    <!--<div id="curve_chart" style="width: calc(100% - 10rem); height: 100%"></div>-->
                                 </div>
                                 <div class="col"></div>
                             </div>
@@ -132,8 +132,8 @@
 
         <section id="paginas" class="paginas my-5">
             <div class="container">
-                <div class="row">
-                    <div class="col-lg">
+                <div class="scrolling-wrapper row flex-row flex-nowrap mt-4 pb-4 pt-2">
+                    <div class="col-lg-3 col-sm-5 col-10">
                         <a href="./vulners/" class="text-decoration-none">
                             <div class="paginas__card card text-center shadow">
                                 <img src="./assets/img/ethicalhacking.avif" class="card-img-top" alt="...">
@@ -144,7 +144,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg">
+                    <div class="col-lg-3 col-sm-5 col-10">
                         <a href="#" class="text-decoration-none">
                             <div class="paginas__card card text-center shadow">
                                 <img src="./assets/img/criptografia.jpg" class="card-img-top" alt="...">
@@ -155,7 +155,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg">
+                    <div class="col-lg-3 col-sm-5 col-10">
                         <a href="#" class="text-decoration-none">
                             <div class="paginas__card card text-center shadow">
                                 <img src="./assets/img/learning.jpg" class="card-img-top" alt="...">
@@ -166,7 +166,7 @@
                             </div>
                         </a>
                     </div>
-                    <div class="col-lg">
+                    <div class="col-lg-3 col-sm-5 col-10">
                         <a href="#" class="text-decoration-none">
                             <div class="paginas__card card text-center shadow">
                                 <img src="./assets/img/engrenagem.jpg" class="card-img-top" alt="...">
@@ -298,7 +298,7 @@
                     </div>
                     <div class="col-lg">
                         <div class="relate__content">
-                            <ul class="relate__list px-0">
+                            <ul class="relate__list px-0 mx-sm-5">
                                 <li class="py-2">
                                     <i class="bi bi-github"></i> <a href="https://github.com/CarlosAllberto/VWAT/issues" target="_blank">CarlosAllberto/VWAT/issues</a>
                                 </li>
@@ -493,20 +493,20 @@
             responsive: [
                 {
                 breakpoint: 768,
-                settings: {
-                    arrows: false,
-                    centerMode: true,
-                    centerPadding: '80px',
-                    slidesToShow: 3
-                }
+                    settings: {
+                        arrows: false,
+                        centerMode: true,
+                        centerPadding: '10px',
+                        slidesToShow: 2
+                    }
                 },
                 {
-                breakpoint: 480,
+                breakpoint: 1000,
                 settings: {
                     arrows: false,
                     centerMode: true,
-                    centerPadding: '40px',
-                    slidesToShow: 2
+                    centerPadding: '20px',
+                    slidesToShow: 3
                 }
                 }
             ]

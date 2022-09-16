@@ -3,7 +3,12 @@ $cor2: #8FF240;
 $cor3: #AA88FF;
 $cor4: #282A2D;
 $cor5: #1B1D20;
-
+.span-green {
+    color: $cor2;
+}
+.span-purple {
+    color: $cor3;
+}
 .buttonPurple {
     background: linear-gradient(#9B30F9, #84e);
     color: white;
@@ -70,6 +75,9 @@ main {
     }
 }
 .paginas {
+    .scrolling-wrapper{
+	    overflow-x: auto;
+    }
     &__card {
         color: whitesmoke;
         height: 250px;

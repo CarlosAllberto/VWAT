@@ -165,6 +165,27 @@ $sidebar = '
                 </div>
             </div>
         </div>
+        <hr>
+        <div>
+            <a href="#" class="d-flex rounded">
+                <div class="sidebar__icon d-flex align-items-center justify-content-center">
+                    <i class="bi bi-info-circle"></i>
+                </div>
+                <div class="sidebar__address my-auto">
+                    <p class="my-auto">info</p>
+                </div>
+            </a>
+        </div>
+        <div>
+            <a href="#" class="d-flex rounded">
+                <div class="sidebar__icon d-flex align-items-center justify-content-center">
+                    <i class="bi bi-tag"></i>
+                </div>
+                <div class="sidebar__address my-auto">
+                    <p class="my-auto">Version 1.0</p>
+                </div>
+            </a>
+        </div>
     </div>
 </div>
 ';

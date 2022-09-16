@@ -51,7 +51,7 @@ if(isset($_POST["email"]) || isset($_POST["password"])) {
     <main class="m-0">
         <section class="login" id="login">
             <div class="">
-                <div class="row w-100 h-100">
+                <div class="row w-100 h-100 m-auto">
                     <div class="col-lg-6 col-12">
                         <div class="login__content py-5">
                             <div class="d-flex justify-content-between pb-lg-5 pb-3">
